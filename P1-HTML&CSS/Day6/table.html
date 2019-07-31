@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #app{
+            width: 600px;
+            margin: 20px auto;
+        }
+        #table{
+            width: 600px;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <fieldset id="app">
+        <legend>撩课学生登记表</legend>
+        <div>
+            <span>姓名：</span>
+            <input type="text" placeholder="请输入姓名">
+        </div>
+        <div>
+            <span>年龄：</span>
+            <input type="number" placeholder="请输入年龄">
+        </div>
+        <div>
+            <span>性别：</span>
+            <select name="" id="">
+                <option value="男">男</option>
+                <option value="女">女</option>
+            </select>
+        </div>
+        <div>
+            <span>电话：</span>
+            <input type="text" placeholder="请输入电话">
+        </div>
+        <div>
+
+            <input type="submit" value="注册新用户">
+        </div>
+    </fieldset>
+
+    <table id="table">
+        <thead>
+            <tr>姓名</tr>
+            <tr>年龄</tr>
+            <tr>性别</tr>
+            <tr>电话</tr>
+            <tr>删除</tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>golden</td>
+                <td>24</td>
+                <td>男</td>
+                <td>1234</td>
+               <td> <button value="删除">删除</button></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

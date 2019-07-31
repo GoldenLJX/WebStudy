@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div id="box">Golden</div>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script>
+        $(function () {
+            //1,对象的获取
+            var div = document.getElementById('box');
+            var $div = $('box');
+                // console.log(div);
+                // console.log($div);
+            //2.js不能使用Jq的方法,jq也不能用js的方法
+                // console.log(div.innerText);
+                // console.log($div.innerText);
+            //3.转化
+            //js-->jq
+            var $divchange = $(div);
+            console.log($divchange.html());
+            //jq-->js
+            var divchange = $div[0];
+            console.log(divchange.innerText);
+        });
+    </script>
+</body>
+</html>

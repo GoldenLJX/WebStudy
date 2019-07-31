@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/animate.css">
+    <style>
+        div{
+            width: 220px;
+            height: 220px;
+            background-color: red;
+        }
+        /*想要达到自己想要的效果,就直接重写信的样式,但是千万不要在.css文件中直接修改,避免同事的修改不知道*/
+        .animated {
+            -webkit-animation-duration: 5s;
+        animation-duration: 5s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        }
+    </style>
+</head>
+<body>
+<!--一定要添加animated基础类才可以使用-->
+<div class="animated flip infinite"></div>
+</body>
+</html>

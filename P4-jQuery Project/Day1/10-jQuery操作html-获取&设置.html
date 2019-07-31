@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="box">
+    <span>haha</span>
+    <p>heheh</p>
+</div>
+<input type="text" value="golden" id="name">
+<a href="http://www.baidu.com" target="_blank">百度一下</a>
+<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+    $(function () {
+        getContent();
+        setContent();
+        setAttribute();
+    });
+    function getContent() {
+        var $box = $('#box');
+        //1.获取文本内容
+        var text = $box.text();
+        console.log(text);
+        //2.获取标签以及文本内容
+        var html = $box.html();
+        console.log(html);
+        //3.获取输入框中的value
+        var val = $('#name').val();
+        console.log(val);
+        //4.获取标签中的属性值
+        var attr = $('a').attr('href');
+        console.log(attr);
+    }
+    function setContent() {
+        var $box = $('#box');
+        $box.text('Golden is a cute boy');
+        $box.html('<h1>Golden is good guy</h1>');
+    }
+    function setAttribute() {
+        $('a').attr({
+            'href':"https://www.sohu.com",
+            'target':'_self'
+        })
+    }
+</script>
+</body>
+</html>

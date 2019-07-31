@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .active{
+            background-color: orangered;
+            font-size: 30px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <p v-for="(college,index) in colleges" :class="index === activeIndex?'active':''">
+        {{college}}
+    </p>
+</div>
+<script src="js/vue.js"></script>
+<script>
+    new Vue({
+        el:'#app',
+       data: {
+           colleges: [
+               'Java学院',
+               'C/C++学院',
+               'Python学院',
+               'iOS学院',
+               'Android学院',
+           ],
+           activeIndex:2
+       }
+    });
+</script>
+</body>
+</html>

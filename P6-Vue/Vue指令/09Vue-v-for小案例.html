@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+<!--    遍历数组,这个index下标可以有,也可以没有-->
+    <table>
+        <thead>
+            <tr>
+                <td>姓名</td>
+                <td>年龄</td>
+                <td>性别</td>
+            </tr>
+        </thead>
+        <tbody>
+        <tr v-for="p in persons">
+            <td>{{p.name}}</td>
+            <td>{{p.age}}</td>
+            <td>{{p.gender}}</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<script src="js/vue.js"></script>
+<script>
+    new Vue({
+        el:'#app',
+       data:{
+            persons:[
+                {name:'张三',age:18,gender:'男'},
+                {name:'李四',age:20,gender:'男'},
+                {name:'王五',age:21,gender:'女'},
+                {name:'赵柳',age:22,gender:'男'},
+                {name:'嘎嘎',age:30,gender:'男'}
+            ],
+       }
+    });
+</script>
+</body>
+</html>

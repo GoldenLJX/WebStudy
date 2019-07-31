@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>06-大屏焦点图-节点操作</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .box {
+            width: 520px;
+            height: 280px;
+            margin: 100px auto;
+            border: 1px solid #cccccc;
+            overflow: hidden;
+        }
+
+        .box > ul {
+            position: relative;
+        }
+
+        .box > ul > li {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .box > ul > li > img {
+            width: 520px;
+            height: 280px;
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="box">
+    <ul>
+        <li><img src="images/01.jpg"></li>
+    </ul>
+</div>
+
+<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+    $(function () {
+        /*
+          要求:
+          点击浏览器左侧, 则, 展示左边一个图片,
+          点击浏览器右侧, 展示右边一个图片
+          越界循环
+        */
+        //1.获取数据源,用数组代替
+        var imageNames = [];
+        for (var i = 1; i < 5; i++) {
+            imageNames.push('images/0' + i + '.jpg');
+        }
+        // console.log(imageName);
+        //2.设置索引
+        var currentImgIndex = 0, middleX = $(window).width() * 0.5, isLeft = false;
+        //3.监听点击效果
+        $(document).click(function (e) {
+            console.log(e.pageX);//e.pageX获取鼠标点击的位置
+            //3.1判断点击的是左边还是右边
+            if (e.pageX <= middleX) {//左边
+                isLeft = true;
+                currentImgIndex = (currentImgIndex - 1 + imageNames.length) % imageNames.length;
+                console.log(currentImgIndex);
+            } else {//右边
+                isLeft = false;
+                currentImgIndex = (currentImgIndex + 1) % imageNames.length;
+                console.log(currentImgIndex);
+            }
+            //4.创建新的li标签
+            var $newTag = $('.box>ul>li').clone();
+            var imageName = imageNames[currentImgIndex];
+            $newTag.children('img').attr('src', imageName);
+            $('.box>ul').prepend($newTag);
+            if (isLeft) {
+                $('.box>ul>li:last').animate({
+                    left: '-520px'
+                }, 200, function () {
+                    $(this).remove();
+                });
+            } else {
+                $('.box>ul>li:last').animate({
+                    left: '520px'
+                }, 200, function () {
+                    $(this).remove();
+                });
+            }
+            console.log(currentImgIndex);
+        });
+    });
+</script>
+</body>
+</html>

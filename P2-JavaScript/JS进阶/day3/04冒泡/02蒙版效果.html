@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>蒙版效果</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        body{
+            background-color: gray;
+            width: 100%;
+            height: 3000px;
+        }
+        #box{
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            margin: 100px auto ;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">登录</button>
+    <div id="box"></div>
+
+    <script>
+        window.onload = function () {
+            var btn = document.getElementById('btn');
+            var box = document.getElementById('box');
+            btn.onclick =function (event) {
+                if(event && event.stopPropagation){ // w3c标准
+                    event.stopPropagation();
+                }else{ // IE系列 IE 678
+                    event.cancelBubble = true;
+                }
+                box.style.display = 'block';
+                document.body.style.overflow = 'hidden';
+            }
+            document.onclick = function (event) {
+                var e  = event || window.event;
+                var targetId = e.target?e.target.id : e.srcElement.id;
+                if(targetId!=='box'){
+                    console.log(targetId);
+                    box.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }else {
+                    window.location.href = "http://www.baidu.com";
+                }
+
+            }
+
+        }
+    </script>
+</body>
+</html>

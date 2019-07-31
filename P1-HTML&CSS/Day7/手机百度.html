@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        html{
+            font-size: 10px;
+        }
+        body{
+            font-size: 1.6rem;
+        }
+        .bd-outline{
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+        }
+        .bd-header{
+            background-color: #e8e8e8;
+            border-bottom:0.1rem solid #000;
+            display: flex;
+            justify-content: space-around;
+
+        }
+        .bd-header span{
+           padding: 0.3rem;
+        }
+
+        .bd-content{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .bd-content-cell1{
+            margin-top: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            border-bottom: 0.5px solid #e0dede;
+        }
+        .bd-content-cell1-top{
+            /*background-color: green;*/
+            width: 100%;
+            height: 2rem;
+        }
+        .bd-content-cell1-center{
+            /*background-color: red;*/
+            display: flex;
+            /*flex: 1;*/
+        }
+        .bd-content-cell1-center div{
+            flex: 1;
+            padding: 5px;
+        }
+        .bd-content-cell1-center div img{
+            width: 100%;
+            height: 100%;
+            /*padding: 0.5rem;*/
+        }
+
+        .bd-content-cell2{
+            display: flex;
+            margin-top: 1rem;
+        }
+
+        .bd-content-cell2 .bd-content-cell2-right{
+            /*flex: 2;*/
+            display: flex;
+            flex-direction: column;
+        }
+        .bd-content-cell2 div img{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="bd-outline">
+<!--        头部-->
+        <div class="bd-header">
+            <span>推荐</span>
+            <span>热点</span>
+            <span>军事</span>
+            <span>娱乐</span>
+            <span>搞笑</span>
+        </div>
+<!--        内容-->
+        <div class="bd-content">
+            <div class="bd-content-cell1">
+                <div class="bd-content-cell1-top">这张游客照刷屏了！</div>
+                <div class="bd-content-cell1-center">
+                    <div><img src="imgs/img1.jpg" alt=""></div>
+                    <div><img src="imgs/img2.jpg" alt=""></div>
+                    <div><img src="imgs/img3.jpg" alt=""></div>
+                </div>
+                <div class="bd-content-cell1-bottom">5-7</div>
+            </div>
+            <div class="bd-content-cell1">
+                <div class="bd-content-cell1-top">这张游客照刷屏了！</div>
+                <div class="bd-content-cell1-center">
+                    <div><img src="imgs/img1.jpg" alt=""></div>
+                    <div><img src="imgs/img2.jpg" alt=""></div>
+                    <div><img src="imgs/img3.jpg" alt=""></div>
+                </div>
+                <div class="bd-content-cell1-bottom">5-7</div>
+            </div>
+            <div class="bd-content-cell2">
+                <div class="bd-content-cell2-left">
+                    <img src="imgs/img4.jpg" alt="">
+                </div>
+                <div class="bd-content-cell2-right">
+                    <p>予以警告驱离！南部战区回应美舰擅入南海岛礁邻近海域</p>
+                    <p>环球时报</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

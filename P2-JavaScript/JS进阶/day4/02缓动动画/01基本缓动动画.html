@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>01基本的缓动动画</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #box{
+            width: 100px;
+            background-color: red;
+            height: 100px;
+            position: absolute;
+            left: 0;
+            top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">往右走</button>
+    <div id="box"></div>
+    <script src="js/myFunc.js">
+    </script>
+    <script>
+        window.onload =function(){
+            var target = 800,timer = null;
+
+            $('btn').onclick = function () {
+                clearInterval(timer);
+                timer = setInterval(function () {
+                    var speed = (target -$('box').offsetLeft) * 0.2;
+                    speed = Math.ceil(speed);
+                    $('box').style.left = $('box').offsetLeft+ speed +'px';
+                    if($('box').offsetLeft===target){
+                        clearInterval(timer);
+                    }
+                },20);
+
+            }
+        };
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>照片墙特效</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        ul{
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        li{
+            position: absolute;
+            width: 250px;
+            height: 360px;
+            transition: all 1s;
+        }
+        li img{
+            vertical-align: top;
+        }
+        .current{
+            left:50% !important;
+            top: 50% !important;
+            transform: rotate(0deg) translate(-50%,-50%) scale(1.5,1.5) !important;
+            transition: 1s all ;
+            z-index: 99;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <ul id="ps">
+    </ul>
+</div>
+<script src="js/underscore.js"></script>
+<script>
+
+
+    window.onload = function () {
+        /**
+         * 照片墙效果分析：
+         * 1.照片是随机旋转的
+         * 2.照片不能超出可视区域
+         * 3.点击照片会旋转过度到中心
+         */
+        //1.0首先获取ul的标签
+        var ps = document.getElementById("ps");
+        //2.0动态创建标签
+        for(var i=0;i<10;i++){
+            //2.1创建li标签
+            var li = document.createElement('li');
+            //添加到Ul里面
+            ps.appendChild(li);
+            //2.2创建img标签
+            var img = document.createElement('img');
+            img.src = "images/pic"+ (i+1) +".jpg";
+            li.appendChild(img);
+        }
+        //3.0获取所有的li标签
+        var allLis = document.getElementsByTagName("li");
+        console.log(allLis);
+        //4.求出屏幕的可视区域,这是为了让图片不超出范围显示,减去250和360是为了不让图片超出视图
+        var screenW = document.documentElement.clientWidth - 250;
+        var screenH = document.documentElement.clientHeight - 360;
+        // 5.遍历所有的li标签，随机显示
+        for(var i=0;i<allLis.length;i++){
+          var li2 = allLis.item(i);
+            console.log(li2);
+            // 5.1随机分布
+            li2.style.left = _.random(0,screenW) +'px';
+            li2.style.top = _.random(0,screenH) +'px';
+            // 5.2随机旋转
+            li2.style.transform = "rotate(" +_.random(0,360)+"deg)";
+            // 5.3监听点击事件
+            li2.onclick = function () {
+                for (var j = 0;j<allLis.length;j++){
+                    allLis[j].className = "";
+                }
+                this.className = 'current';
+            }
+        }
+
+    }
+</script>
+</body>
+</html>

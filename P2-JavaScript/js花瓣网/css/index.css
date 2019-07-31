@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    vertical-align: top;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#page{
+    width: 100%;
+    height: 100%;
+
+}
+/******头部开始*******/
+.header{
+ width: 100%;
+    height: auto;
+}
+.header>.header-in{
+   width: 1244px;
+    height: 48px;
+    margin: 0 auto;
+}
+.header>.header-in>.header-left{
+    width: 439px;
+    height: 100%;
+    float: left;
+    line-height: 40px;
+
+}
+.header>.header-in>.header-left ul li {
+    float: left;
+    margin-right: 20px;
+}
+.header>.header-in>.header-left ul li a{
+    text-decoration: none;
+    color: #444444;
+    font-size: 14px;
+}
+.header>.header-in>.header-left ul li a:hover{
+    color: orangered;
+}
+.header>.header-in>.header-left ul li:nth-child(7) a{
+    font-size: 40px;
+   line-height: 15px;
+}
+
+.header .header-in .header-left>.new{
+    width: 30px;
+    height: 14px;
+    background-color: #f4a523;
+    display: inline-block;
+    line-height: 18px;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 16px;
+    margin-left: 2px;
+    padding: 1px;
+}
+.header .header-in .header-left .logo-pic{
+    width: 80px;
+    height: 28px;
+    background: url("../images/huaban_logo.png") no-repeat;
+    background-size: 80px;
+    margin-top: 5px;
+}
+.header .header-in .header-center{
+    width: 675px;
+    height: 34px;
+
+    float: left;
+}
+.header .header-in .header-center input{
+    width: 100%;
+    height: 100%;
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    outline: none;
+    margin-top: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+.header .header-in .header-right{
+    float: right;
+    background-color: red;
+    line-height: 48px;
+}
+.header .header-in .header-right .register{
+    float: left;
+    border: 1px solid #ccc;padding: 5px;
+    
+}
+.header .header-in .header-right .login{
+    float: right;
+}
+/******头部结束*******/

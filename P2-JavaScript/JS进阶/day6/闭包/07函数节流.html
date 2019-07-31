@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // window.onresize = function () {
+    //     var timer = null;
+    //     clearTimeout(timer);
+    //     timer = setTimeout(function () {
+    //         console.log(document.documentElement.clientWidth);
+    //     },2400);
+    //
+    // }
+    
+    //使用闭包来节流
+    function tor(fn,delay) {
+        var timer = null
+        return function () {
+            clearTimeout(timer);
+            timer = setTimeout(fn,delay)
+        }
+    }
+    window.onresize = tor(function () {
+        console.log(document.documentElement.clientWidth);
+    },1000);
+</script>
+</body>
+</html>

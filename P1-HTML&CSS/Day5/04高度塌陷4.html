@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>高度塌陷4</title>
+    <style>
+        .box1 {
+            border: 1px solid #000;
+            /*height: 200px;*/
+            background-color: #bce8f1;
+        }
+
+        .box2 {
+            width: 80px;
+            height: 600px;
+            background-color: red;
+            margin-top: 50px;
+        }
+
+        .box3 {
+            height: 200px;
+            background-color: green;
+        }
+
+        .clearfix::before,.clearfix::after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        .box4 {
+            width: 30px;
+            height: 60px;
+            background-color: blue;
+            margin-top: 60px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="box1 clearfix">
+    <div class="box2"></div>
+</div>
+<div class="box3 clearfix">
+    <div class="box4">
+    </div>
+</div>
+</body>
+</html>

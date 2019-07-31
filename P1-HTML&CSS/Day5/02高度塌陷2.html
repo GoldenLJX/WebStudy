@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box1{
+            border: 1px solid #000;
+
+        }
+        .box2{
+            width: 80px;
+            height: 200px;
+            background-color: red;
+            float: left;
+        }
+        .box3{
+            height: 200px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+<div class="box1">
+    <div class="box2"></div>
+<!--    方式
+	在塌陷的父元素的最后添加一个空白的div，然后对该div进行清除浮动
+	<div id="box1">
+	<div id="box2"></div>
+	<div style="clear:both"></div>
+</div>-->
+    <div style="clear:both"></div>
+</div>
+<div class="box3"></div>
+</body>
+</html>

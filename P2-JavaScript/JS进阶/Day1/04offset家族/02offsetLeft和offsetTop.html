@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            position: relative;
+            margin: 10px auto;
+        }
+        span{
+            width: 10px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <span>qweqweqwe</span>
+    </div>
+    <script>
+        window.onload = function () {
+            var box = document.getElementById("box");
+            var span  = document.getElementsByTagName('span')[0];
+            //当父标签有定位的时候，那么span的offsetleft和offsetop为0，如果没有，就向上溯源
+            console.log(span.offsetLeft,span.offsetTop);
+            var width = box.offsetLeft;
+            var top = box.offsetTop;
+            console.log(width,top);
+
+        }
+    </script>
+</body>
+</html>

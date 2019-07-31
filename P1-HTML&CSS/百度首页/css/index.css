@@ -1,0 +1,192 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/****************头部-Start*********************/
+#header{
+
+    height: 33px;
+
+    border-bottom: 1px solid #ebebeb;
+}
+
+#header a{
+    color: #555555;
+    font-size: 13px;
+    border: 1px solid #e0e0e0;
+    margin-left: 8px;
+}
+#header .header-left {
+    float: left;
+    width: 270px;
+    height: 33px;
+    line-height: 33px;
+    /*background-color: red;*/
+}
+
+#header .header-left span{
+    line-height: 33px;
+}
+
+#header .header-right{
+    float: right;
+
+    height: 33px;
+    width: 600px;
+    text-align: right;
+    line-height: 33px;
+
+}
+#header .header-right{
+    /*line-height: 100%;*/
+
+}
+#header .header-right a{
+    text-align: center;
+    margin-left: 15px;
+   font-weight: bolder;
+
+}
+
+#header .header-right #more-product{
+    background-color: #398bfb;
+    display: inline-block;
+    height: 33px;
+    width: 86px;
+    color: #ffffff;
+    text-decoration: none;
+    vertical-align: top;
+    text-align: center;
+
+}
+/****************头部-End*********************/
+
+
+
+
+
+/****************搜索-Start*********************/
+#content{
+    width: 641px;
+    height: 189px;
+    margin: 20px auto;
+    /*background-color: red;*/
+}
+#content .content-logo{
+ text-align: center;
+}
+#content .content-logo img{
+    width: 270px;
+    height: 129px;
+    text-align: center;
+}
+#content .content-search form{
+    width: 100%;
+    height: 44px;
+    background-color: cadetblue;
+}
+#content .content-search .content-search-input{
+    width: 536px;
+    height: 44px;
+    padding: 8px;
+/*    去除外边框*/
+    outline: none;
+    border: 1px solid #e0e0e0;
+    float: left;
+}
+#content .content-search .content-search-submit{
+    width: 105px;
+    height: 44px;
+    background-color: #398bfb;
+    color: #f0f0f0;
+    border: none;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+/****************搜索-End*********************/
+
+
+/****************列表-Start*********************/
+#list{
+    width: 895px;
+    height: 600px;
+    border: 1px solid #ebebeb;
+    margin: 0 auto;
+}
+#list .list-head{
+    height: 40px;
+    /*margin-left: 5px;*/
+    border-bottom: 1px solid #ebebeb;
+}
+#list .list-head .list-head-left{
+    float: left;
+    font-size: 0px;
+}
+#list .list-head .list-head-focus{
+    width: 124px;
+    height: 39px;
+    /*display: inline-block;*/
+    /*float: left;*/
+    line-height: 40px;
+}
+#list .list-head .list-head-focus img{
+   padding-left: 3px;
+    vertical-align: middle;
+}
+#list .list-head .list-head-left a {
+    height: 40px;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 0 10px;
+    line-height: 40px;
+    color: black;
+    /*vertical-align: top;*/
+    /*margin-left: 8px;*/
+}
+#list .list-head .list-head-left a img,
+#list .list-head .list-head-left a span {
+    vertical-align: middle;
+}
+
+#list .list-head a:hover{
+    background-color: #cccccc;
+}
+
+#list .list-head-right {
+    float: right;
+
+    padding: 0 21px 0 11px;
+    /*margin-right: 10px;*/
+    /*background-color: red;*/
+    line-height: 40px;
+}
+#list .list-head-right a img{
+    vertical-align: middle;
+}
+#list .list-content{
+    width: 700px;
+    height: 800px;
+    background-color: blue;
+}
+
+#list .list-content .list-content-left{
+    width: 575px;
+    height: 600px;
+    float: left;
+    padding: 10px 5px 5px 10px;
+    background-color: green;
+}
+#list .list-content .list-content-left h3{
+    text-align: left;
+}
+#list .list-content .list-content-left img{
+    padding-right: 10px;
+}
+#list .list-content .list-content-left p{
+    font-size: 3px;
+}
+
+/****************列表-End*********************/

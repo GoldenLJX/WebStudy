@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+    $(function () {
+       var arr = ['张三','李四'];
+       //静态方法each遍历
+       // $.each(arr,function (index,value) {
+        //     console.log(index + ':'+ value);
+        // });
+        var obj = {'name':'Golden','age':18};
+        // $.each(obj,function (index,value) {
+        //     console.log(index + ':'+ value);
+        // });
+        //这个方法对对象是不可以遍历的
+        $(obj).each(function (index,value) {
+            console.log(index + ':'+ value);
+        })
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            height: 3000px;
+        }
+    </style>
+</head>
+<body>
+
+<script>
+    /**
+     * 获取滚动的头部距离和左边距离
+     * scroll().top scroll().left
+     * @returns {*}
+     * {}是json中的对象，
+     */
+    function scroll() {
+        if(window.pageYOffset !== null){//IE9+和最新浏览器
+            return {
+                top: window.pageYOffset,
+                left: window.pageXOffset
+            }
+        }else if(document.compatMode === "CSS1Compat"){ // W3C
+            return {
+                top: document.documentElement.scrollTop,
+                left: document.documentElement.scrollLeft
+            }
+        }
+
+        return {
+            top: document.body.scrollTop,
+            left: document.body.scrollLeft
+        }
+    }
+    //这个是当页面往下滚动的时候触发的函数
+    window.onscroll = function () {
+        console.log(scroll().top);
+    }
+</script>
+</body>
+</html>

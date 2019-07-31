@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #box{
+            width: 600px;
+            height: 600px;
+            border: 1px solid #000;
+            margin: 100px auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+
+    <script src="js/echarts.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        $(function () {
+           var option = {
+               xAxis: {
+                   type: 'category',
+                   boundaryGap: false,
+                   data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+               },
+               yAxis: {
+
+               },
+               series: [{
+                   data: [820, 932, 901, 934, 1290, 1330, 1320],
+                   type: 'line',
+                   // areaStyle: {}
+               }]
+           };
+           var echart = new echarts.init(document.getElementById('box'));
+           echart.setOption(option);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .first{
+            background-color: red;
+        }
+        .second{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <ul class="first">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ul>
+    <ul class="second">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ul>
+<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+    $(function () {
+        //1内部添加,插入父子节点
+       var $newli = $('<li>hahah</li>');
+       var $first = $('.first');
+       // $first.append($newli);//添加节点追加到最后面
+        //$newli.appendTo($first);//添加节点追加到最后面
+        // $first.prepend($newli);//添加节点追加到最前面
+        $newli.prependTo($first)//添加节点追加到最前面
+        //2外部添加,插入兄弟节点after,before
+        $first.after($newli);//在每个匹配的元素之后插入内容。
+
+    });
+</script>
+</body>
+</html>

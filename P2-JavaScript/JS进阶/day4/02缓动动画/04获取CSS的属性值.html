@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            border: 1px solid #000;
+            background-color: #f2bf0b;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+<button>点我获取CSS属性</button>
+    <script>
+        window.onload = function () {
+            /**
+             * 在开发中，我们想要获得css 的样式，通常采用：
+             * box.style.top ，box.style.backgorundColor等， 但这种方式只能得到 行内样式，
+             * 而平常用的最多的是页内样式或者外部样式， 那我们如何解决这样的问题？
+             * @type {HTMLDivElement}
+             */
+            var div = document.getElementsByTagName('div')[0];
+            var btn = document.getElementsByTagName('button')[0];
+            btn.onclick = function(){
+
+                console.log(getStyleAttr(div,'width'));
+                console.log(getStyleAttr(div,'height'));
+                console.log(getStyleAttr(div,'border'));
+            };
+            //获取CSS属性的兼容性写法
+            function getStyleAttr(obj, attr) {
+                if(obj.currentStyle){ // IE 和 opera
+                    return obj.currentStyle[attr];
+                }else {//标准W3C
+                    return window.getComputedStyle(obj, null)[attr];
+                }
+            }
+
+        }
+    </script>
+</body>
+</html>

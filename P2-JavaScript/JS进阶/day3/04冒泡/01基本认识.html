@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>冒炮基本认识</title>
+</head>
+<body>
+    <div id="box">
+        <button>点我</button>
+    </div>
+    <script>
+        window.onload= function () {
+            var  button = document.getElementsByTagName('button')[0];
+            var  box = document.getElementById('box');
+            button.onclick = function (event) {
+                if(event && event.stopPropagation){ // w3c标准
+                    event.stopPropagation();
+                }else{ // IE系列 IE 678
+                    event.cancelBubble = true;
+                }
+                alert('button');
+            }
+            box.onclick = function () {
+                alert('box');
+            }
+            document.onclick = function () {
+                alert('doc');
+            }
+        }
+    </script>
+</body>
+</html>

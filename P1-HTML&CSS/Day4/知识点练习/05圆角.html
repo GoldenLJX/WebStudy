@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>固定定位</title>
+    <style>
+/*<!--
+	固定定位
+	1. 固定定位是一种特殊的绝对定位，它的特点大部分都和绝对定位一样
+	2. 不同的是，固定定位的元素永远都是相对于浏览器窗口进行定位的。并且他不会随滚动条滚动
+	-->*/
+
+
+#box1{
+    width: 200px;
+    height: 200px;
+    margin-left: 50px;
+    margin-top: 50px;
+    background-color: red;
+    position: fixed;
+    opacity: 0.3;
+    /*float: left;*/
+}
+#box2{
+    width: 200px;
+    height: 200px;
+    margin-left: 50px;
+    margin-top: 50px;
+    background-color: peachpuff;
+    border-bottom-left-radius: 60px;
+    /*float: left;*/
+}
+#box3{
+    width: 200px;
+    height: 200px;
+    margin-left: 50px;
+    margin-top: 50px;
+    background-color: mediumpurple;
+    /*float: left;*/
+}
+#box4{
+    width: 200px;
+    height: 1000px;
+    margin-left: 50px;
+    margin-top: 50px;
+    background-color: skyblue;
+    position: relative;
+    left: 60px;
+    bottom: 90px;
+
+}
+        span{
+            /*height: 60px;*/
+            width: 100%;
+            background-color: yellowgreen;
+            /*position: fixed;*/
+            left: 60px;
+            top: 150px;
+        }
+    </style>
+</head>
+<body>
+<div id="box1">box1
+    <span>hello 大家好</span>
+    <span>hello w bu hao </span>
+</div>
+<div id="box2">box2</div>
+<div id="box3">box3</div>
+<div id="box4">
+
+</div>
+
+</body>
+</html>

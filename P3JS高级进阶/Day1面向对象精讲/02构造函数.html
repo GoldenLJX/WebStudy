@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Dog(name,age,dogFriends) {
+        this.name= name;
+        this.age = age;
+        this.dogFriends = dogFriends;
+        this.eat = function (something) {
+            console.log(this.name +'eat' + something);
+        }
+        this.run = function (somewhere) {
+            console.log(this.name +'run to' + somewhere);
+        }
+    }
+
+    var smallDog = new Dog('小瓜',1,{name:'xiaohua',age:18});
+    console.log(smallDog);
+    console.log(smallDog.name);
+    console.log(smallDog.dogFriends);
+</script>
+</body>
+</html>

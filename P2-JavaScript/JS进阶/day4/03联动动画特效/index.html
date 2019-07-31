@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>联动动画</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        img{
+            vertical-align: top;
+        }
+        #box{
+            position: fixed;
+            right: 0;
+            bottom: 0;
+        }
+        span{
+            width: 25px;
+            height: 25px;
+            background-color: red;
+            position: absolute;
+            right: 0;
+            top:0;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <span id="sp"></span>
+        <div id="top">
+            <img src="images/top.jpg" alt="">
+        </div>
+        <div id="bottom">
+            <img src="images/bottom.jpg" alt="">
+        </div>
+    </div>
+    <script src="js/myFunc.js"></script>
+    <script>
+        window.onload = function () {
+            //1.声明变量
+            var span  = $('sp');
+            var box = $('box');
+            var top = $('top');
+            var bottom = $('bottom');
+            span.onclick = function () {
+                // bufferAnimation(bottom,{"bottom":102});
+                // bufferAnimation(top,{"right":320});
+                bufferAnimation(bottom, {height: 0}, function () {
+                    bufferAnimation(box, {width: 0}, function () {
+                        span.style.display = "none";
+                    });
+                });
+            }
+        }
+    </script>
+</body>
+</html>

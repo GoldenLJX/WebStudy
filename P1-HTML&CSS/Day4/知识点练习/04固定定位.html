@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>固定定位</title>
+    <style>
+/*<!--
+	固定定位
+	1. 固定定位是一种特殊的绝对定位，它的特点大部分都和绝对定位一样
+	2. 不同的是，固定定位的元素永远都是相对于浏览器窗口进行定位的。并且他不会随滚动条滚动
+	-->*/
+
+
+#box1{
+    width: 200px;
+    height: 200px;
+    margin-left: 50px;
+    margin-top: 50px;
+    background-color: red;
+    position: fixed;
+    opacity: 0.3;
+    /*float: left;*/
+}
+#box2{
+    width: 200px;
+    height: 200px;
+    margin-left: 50px;
+    margin-top: 50px;
+    background-color: peachpuff;
+    /*float: left;*/
+}
+#box3{
+    width: 200px;
+    height: 200px;
+    margin-left: 50px;
+    margin-top: 50px;
+    background-color: mediumpurple;
+    /*float: left;*/
+}
+#box4{
+    width: 200px;
+    height: 1000px;
+    margin-left: 50px;
+    margin-top: 50px;
+    background-color: skyblue;
+    position: relative;
+    left: 60px;
+    bottom: 90px;
+
+}
+        span{
+            /*height: 60px;*/
+            width: 100%;
+            background-color: yellowgreen;
+            /*position: fixed;*/
+            left: 60px;
+            top: 150px;
+        }
+    </style>
+</head>
+<body>
+<div id="box1">box1
+    <span>hello 大家好</span>
+    <span>hello w bu hao </span>
+</div>
+<div id="box2">box2</div>
+<div id="box3">box3</div>
+<div id="box4">
+
+</div>
+<p>Mozilla是一个全球化的社区。社区成员们坚信开放，创新，和机遇是互联网持续健康发展的关键因素。作为一个社区，我们从1998年开始为确保互联网的发展造福所有用户而共同努力。我们因创作Mozilla Firefox网络浏览器而广为人知。
+
+    Mozilla基于社区创建世界一流的开放源代码软件，并且开拓各种新式的合作活动。我们志同道合，致力于改善广大互联网用户的上网体验。
+
+    通过共同努力，我们总结出一系列准则并相信它们是保证公共利益和商业活动能够受益于互联网的决定性因素。我们在以下列出这些准则。
+
+    此宣言的目的是:
+
+    清晰的展示Mozilla参与者期望Mozilla基金会追求的互联网未来的发展前景；
+    与无论是否具有技术背景的群体沟通；
+    让Mozilla 贡献者对于我们所做的感到自豪，并激励我们继续努力；
+    同时为他人提供一个框架以便推动互联网的发展前景。
+</p>
+</body>
+</html>

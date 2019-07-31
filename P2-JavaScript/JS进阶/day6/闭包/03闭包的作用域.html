@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // (function () {
+    //
+    // })();
+    // ;(function () {
+    //
+    // })();
+    // +(function () {
+    //
+    // })();
+    // ?(function () {
+    //
+    // })();
+    //在闭包中作用域是单独分开的,每一个闭包都是独立的
+    (function () {
+        var age = 20;
+        console.log(age);
+    })();
+    (function () {
+        console.log(age);//这里的Age没有定义,因此会报错
+    })();
+</script>
+</body>
+</html>

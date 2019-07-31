@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button id="btn">点我</button>
+<script type="text/html">
+    var age = 19;
+    (function () {
+        (function () {
+            age = 20;
+        })();
+        console.log(age);
+    })();
+</script>
+<script>
+    (function (document) {//这个document就不会遍历太多次window对象来找到这个document
+        var btn = document.getElementById('btn');
+        btn.onclick = function () {
+            alert(0)
+        }
+    })(document);
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+//通过参数的来匹配不同的调用,达到匹配的效果
+.radius(leftTop,@size:30px){
+  border-top-left-radius: @size;
+}
+.radius(rightTop,@size:30px){
+  border-top-right-radius: @size;
+}
+.radius(leftBottom,@size:30px){
+  border-bottom-left-radius: @size;
+}
+.radius(leftTop,@size:30px){
+  border-bottom-left-radius: @size;
+}
+
+div{
+  width: 200px;
+  height: 200px;
+  border: 1px solid #000;
+}
+.box1{
+  background-color: red;
+  .radius(leftTop,40px);
+}
+.box2{
+  background-color: green;
+  .radius(rightTop,40px);
+}
+.box3{
+  background-color: blue;
+  .radius(leftBottom,40px);
+}
+.box4{
+  background-color: pink;
+  .radius(leftBottom,40px);
+}

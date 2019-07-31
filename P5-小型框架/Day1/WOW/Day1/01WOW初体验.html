@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/animate.css">
+    <title>Title</title>
+    <style>
+        #box{
+            width: 900px;
+            border: 1px solid #000;
+            margin: 100px auto;
+            overflow: hidden;
+        }
+        #box div{
+            width: 450px;
+            height: 300px;
+        }
+        #box div:nth-child(1){
+            background-color: red;
+            float: left;
+        }
+        #box div:nth-child(2){
+            background-color: green;
+            float: right;
+        }
+
+    </style>
+</head>
+<body>
+<div id="box">
+    <div class="wow slideInLeft"></div>
+    <div class="wow slideInRight"></div>
+</div>
+<script src="js/wow.js"></script>
+<script>
+    window.addEventListener('load',function () {
+        new WOW().init();
+    })
+</script>
+</body>
+</html>

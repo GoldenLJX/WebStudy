@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>无限轮播</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style:none;
+        }
+        #box{
+            width: 760px;
+            height: 330px;
+            margin: 100px auto;
+            border: 1px solid #ccc;
+            position: relative;
+            padding: 10px;
+
+        }
+        #content{
+            width: 100%;
+            height:100%;
+           position: relative;
+            overflow: hidden;
+
+        }
+        #content ul{
+            width: 4500px;
+            background-color: blue;
+            display: flex;
+            flex-wrap: wrap;
+            position: absolute;
+        }
+        #content ul li{
+            width: 750px;
+            height: 320px;
+        }
+        #content ul li img{
+            vertical-align: top;
+        }
+        #btn{
+            position: absolute;
+            right: 10px;
+            bottom: 30px;
+        }
+        #btn ol {
+            width: 210px;
+            display: flex;
+            flex-wrap: wrap;
+            /*height: 50px;*/
+        }
+        #btn ol li {
+            width: 30px;
+            height: 30px;
+            margin-left: 5px;
+            background-color:#8c8c8c;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        #btn ol li.current{
+            background-color: orangered;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="content">
+            <ul id="ul">
+                <li><img src="imgs/pic01.jpg" alt=""></li>
+                <li><img src="imgs/pic02.jpg" alt=""></li>
+                <li><img src="imgs/pic03.jpg" alt=""></li>
+                <li><img src="imgs/pic04.jpg" alt=""></li>
+                <li><img src="imgs/pic05.jpg" alt=""></li>
+            </ul>
+        </div>
+        <div id="btn">
+            <ol id="ol">
+            </ol>
+        </div>
+    </div>
+    <script src="js/myFunc.js"></script>
+    <script>
+        window.onload = function () {
+           //1.获取需要的标签
+            var lis = $('ul').children;
+            var currentIndex = 0, indicatorIndex = 0;
+            //2克隆libiaoqian
+            $('ul').appendChild(lis[0].cloneNode(true));
+            //3动态创建页码,有多少页,就动态创建多少个
+            for(var i = 0;i<lis.length;i++){
+                var li = document.createElement('li');
+                $('ol').appendChild(li);
+            }
+            //4第一个选中
+            $('ol').children[0].className = 'current';
+            //5鼠标进入原点
+            var olLis = $('ol').children;
+            for(var j = 0;j<olLis.length;j++){
+                //使用闭包封装事件
+                (function (j) {
+//5.1获取单个li标签
+                    var li = olLis[j];
+                    //5.2鼠标进入
+                    li.onmouseover = function () {
+                        //排他思想,除了选中以外的都不是current类
+                        for(var i = 0;i<olLis.length;i++){
+                            olLis[i].className='';
+                        }
+                        this.className = 'current';//当前的变为选中搞的current
+                        //5.3动起来
+                        constant($('ul'),-(750*j),100);
+                        currentIndex = indicatorIndex = j;
+                    }
+                })(j);
+            }
+            //6.自动轮播
+            var timer = setInterval(autoPlay, 1000);
+            // 7. 清除和设置定时器
+            $("content").onmouseover = function () {
+                clearInterval(timer);
+            };
+            $("content").onmouseout = function () {
+                timer = setInterval(autoPlay, 1000);
+            };
+            function autoPlay() {
+                // 6.1 ul滚起来
+                currentIndex++;
+                //6.1.1边界值处理
+                if (currentIndex > lis.length - 1) {
+                    $("ul").style.left = 0;
+                    currentIndex = 1;
+                }
+                constant($("ul"), -currentIndex * 750, 100);
+
+                // 6.2 指示器滚起来
+                indicatorIndex++;
+                //6.2.1边界值处理
+                if (indicatorIndex > olLis.length - 1) {
+                    indicatorIndex = 0;
+                }
+                //6.2.2排他思想
+                for (var i = 0; i < olLis.length; i++) {
+                    olLis[i].className = "";
+                }
+                olLis[indicatorIndex].className = "current";
+            }
+        }
+    </script>
+</body>
+</html>

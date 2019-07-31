@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        nav{
+            width: 700px;
+            height: 25px;
+            border: 1px solid #c3c3c3;
+            margin: 100px auto;
+            cursor: pointer;
+        }
+        #firstNav{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            position: relative;
+        }
+        .secondNav{
+            border: 1px solid #000;
+            margin-top: 5px;
+            display: none;
+            position: absolute;
+            /*top: 20px;*/
+
+        }
+        .current{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav id="nav">
+        <ul id="firstNav">
+            <li class="firstNav-item">
+                <span>一级菜单</span>
+                <ul class="secondNav current">
+                    <li>二级菜单</li>
+                    <li>二级菜单</li>
+                    <li>二级菜单</li>
+                    <li>二级菜单</li>
+                    <li>二级菜单</li>
+                </ul>
+            </li>
+            <li class="firstNav-item">
+                <span>一级菜单</span>
+                <ul class="secondNav">
+                    <li>二级菜单</li>
+                    <li>二级菜单</li>
+                    <li>二级菜单</li>
+                    <li>二级菜单</li>
+                    <li>二级菜单</li>
+                </ul>
+            </li>
+            <li class="firstNav-item">
+                <span>一级菜单</span>
+                <ul class="secondNav">
+                    <li>二级菜单</li>
+                    <li>二级菜单</li>
+                    <li>二级菜单</li>
+                    <li>二级菜单</li>
+                    <li>二级菜单</li>
+                </ul>
+            </li>
+            <li class="firstNav-item">
+                <span>一级菜单</span>
+                <ul class="secondNav">
+                    <li>二级菜单</li>
+                    <li>二级菜单</li>
+                    <li>二级菜单</li>
+                    <li>二级菜单</li>
+                    <li>二级菜单</li>
+                </ul>
+            </li>
+            <li class="firstNav-item">
+                <span>一级菜单</span>
+                <ul class="secondNav">
+                    <li>二级菜单</li>
+                    <li>二级菜单</li>
+                    <li>二级菜单</li>
+                    <li>二级菜单</li>
+                    <li>二级菜单</li>
+                </ul>
+            </li>
+            <li class="firstNav-item">
+                <span>一级菜单</span>
+                <ul class="secondNav">
+                    <li>二级菜单</li>
+                    <li>二级菜单</li>
+                    <li>二级菜单</li>
+                    <li>二级菜单</li>
+                    <li>二级菜单</li>
+                </ul>
+            </li>
+            <li class="firstNav-item">
+                <span>一级菜单</span>
+                <ul class="secondNav">
+                    <li>二级菜单</li>
+                    <li>二级菜单</li>
+                    <li>二级菜单</li>
+                    <li>二级菜单</li>
+                    <li>二级菜单</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+    $(function () {
+        //1.1先隐藏二级菜单
+        $('.secondNav').css("display",'none');
+        $('.firstNav-item').hover(function () {
+            // $(this).children('.secondNav').slideDown(200);
+            $(this).children('.secondNav').stop().slideToggle(200);//停止所有在指定元素上正在运行的动画。
+       });
+    });
+</script>
+</body>
+</html>

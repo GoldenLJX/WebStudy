@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button>点我</button>
+    <script>
+        window.onload = function () {
+            var btn = document.getElementsByTagName('button')[0];
+            console.log(btn);
+            //所有浏览器都支持event对象，但支持的方式不同。
+            // 比如：IE6-8只能通过window.event获取事件对象，
+            // 而其他的则可以直接获取。通常，考虑兼容性的写法：
+            btn.onclick = function (event) {
+                console.log(event);
+                var e = event || window.event;
+                console.log(e.clientX,e.clientY);
+            }
+            btn.onmouseover = function (event) {
+                var e = event || window.event;
+                console.log(e.target);
+            }
+        }
+    </script>
+</body>
+</html>

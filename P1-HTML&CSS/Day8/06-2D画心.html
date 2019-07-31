@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /* 基于父级定位 */
+        .heart{
+            position: relative;
+        }
+        /* 使用伪元素画出两个图像,使用图形拼接来造出一个心 */
+        .heart::after,
+        .heart::before{
+            content: "";
+            position: absolute;
+            top: 100px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 50px;
+            height: 80px;
+            background: red;
+            /* borde-radius 有四个值 分别对应四个角，分别对应 左上 右上 右下 左下 */
+            border-radius: 50px 50px 0 0;
+
+            /* 旋转元素，两个一起旋转。等下只需要调动一个即可 */
+            transform: rotate(-45deg);
+            transform-origin: 0 100%;
+        }
+        /* 旋转元素 使它和before伪元素 拼接成一个心 */
+        .heart::after{
+            left: -100px;
+            transform: rotate(45deg);
+            transform-origin: 100% 100%;
+        }
+    </style>
+
+</head>
+<body>
+<div class="heart"></div>
+</body>
+</html>

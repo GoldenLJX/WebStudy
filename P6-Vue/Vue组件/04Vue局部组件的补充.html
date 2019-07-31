@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <my-date></my-date>
+</div>
+<div id="test">
+
+</div>
+<script src="js/vue.js"></script>
+<script>
+    new Vue({
+        el:'#app',
+        data:{
+            msg:'Golden write'
+        },
+        components:{//在模块里面声明的就是局部的组件,其他的模块使用不了
+            'my-date':{
+                template:'<div><input type="date">' +
+                    '<p>{hhhh</p></div>'
+            }
+        },
+    });
+    new Vue({
+        el:'#test',
+        data:{
+            msg:'Golden write'
+        }
+    });
+</script>
+</body>
+</html>

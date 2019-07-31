@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <my-slot>
+        <input type="text" name="" id="">
+    </my-slot>
+</div>
+<template id="temp">
+    <div>
+        <header class="panel-header">插槽的头部</header>
+        <slot>我是一个任意可以替换的插槽</slot>
+        <footer class="footer">我是脚部</footer>
+    </div>
+</template>
+<script src="js/vue.js"></script>
+<script>
+    Vue.component('my-slot',{
+        template:'#temp'
+    });
+    new Vue({
+        el:'#app',
+       data:{
+
+       }
+    });
+    let sam3={
+        name:'Golden',
+        classification:{
+            kingdom:'Anamalia',
+            family:'Luo',
+            data(){
+                return 25;
+            }
+        }
+    }
+    delete sam3.classification.family;
+    console.log(sam3);
+    console.log(sam3.classification.family);
+</script>
+</body>
+</html>

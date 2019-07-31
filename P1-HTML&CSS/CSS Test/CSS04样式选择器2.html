@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+<!--复合选择器-->
+        div.test{
+            color: red;
+        }
+        div#second{
+            background-color: green;
+        }
+
+    /*群组选择器*/
+      div, span{
+          color: blue;
+          font-size: large;
+          border: 1px solid #000;
+      }
+    /*后代选择器*/
+    </style>
+</head>
+<body>
+
+    <div class="test">我是div1</div>
+    <div id="second">我是div2</div>
+    <div>我是div3</div>
+
+    <p class="test">我是ip1</p>
+    <p>我是ip2</p>
+    <p>我是ip3</p>
+
+    <span>我是span1</span><span>我是span1</span><span>我是span1</span>
+</body>
+</html>

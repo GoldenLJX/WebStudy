@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        #box{
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            position: absolute;
+            left: 0;
+            top: 120px;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">往右走</button>
+<div id="box">
+    <script src="js/myFunc.js"></script>
+    <script>
+        window.onload = function () {
+            //0.变量
+            var begin = 0, end= 0 , target = 800 ,timer= null;
+            //监听按钮的点击事件
+            $('btn').onclick = function () {
+                //清除定时器
+                clearInterval(timer);
+                //开启定时器
+                console.log('1111::_____->'+$('box').offsetLeft);
+                timer = setInterval(function () {
+                    $('box').style.left = $('box').offsetLeft +10 +'px';
+                    console.log($('box').offsetLeft);
+                    if($('box').offsetLeft>=target){
+                        clearInterval(timer);
+                    }
+                },20);
+                //关闭定时器
+            }
+        }
+
+        /**
+         *
+         * @param {object}obj
+         * @param {number}target
+         * @param {number}speed
+         */
+        function constant(obj,target,speed){
+            clearInterval(obj.timer);
+            obj.timer = setInterval(function () {
+                obj.style.left = obj.offsetLeft + speed + "px";
+                if(obj.offsetLeft >= target){
+                    clearInterval(obj.timer);
+                }
+            },20);
+
+        }
+    </script>
+</div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <temp></temp>
+</div>
+<template id="temp">
+    <div>
+        <input type="date">
+        <p>Hello world!</p>
+        <h1>nihao</h1>
+    </div>
+
+</template>
+<script src="js/vue.js"></script>
+<script>
+    //注册组件
+    Vue.component('temp',{
+        template:'#temp'
+    });
+
+    new Vue({
+        el:'#app',
+       data:{
+
+       }
+    });
+</script>
+</body>
+</html>

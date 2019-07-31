@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        body{
+            background-color: pink;
+        }
+        #box{
+            background-color: #fff;
+            width: 900px;
+            height: 66px;
+            margin: 100px auto;
+            border-radius: 5px;
+            background: url("images/doubleOne.png") no-repeat right center #ffffff;
+            position: relative;
+        }
+        ul{
+            position: relative;
+            background-color: blue;
+        }
+        li{
+            float: left;
+            width: 88px;
+            height: 63px;
+            text-align: center;
+            cursor: pointer;
+            line-height: 70px;
+        }
+        #t_mall{
+            width: 88px;
+            height: 63px;
+            background: url("images/tMall.png") no-repeat;
+            position: absolute;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <span id="t_mall" style="left:264px"></span>
+        <ul>
+            <li>双11狂欢</li>
+            <li>服装会场</li>
+            <li>数码家电</li>
+            <li>家具建材</li>
+            <li>母婴童装</li>
+            <li>手机会场</li>
+            <li>美妆会场</li>
+            <li>进口会场</li>
+            <li>飞猪旅行</li>
+        </ul>
+
+    </div>
+    <script>
+
+        window.onload = function () {
+            /**
+             * 分析：
+             * 1.鼠标跟着动onmouseover
+             * 2.当鼠标点击对应的li，t_mall跟着移动对应的位移
+              */
+            //1获取需要的标签
+            var ul = document.getElementsByTagName("ul")[0];
+            var lis = ul.getElementsByTagName('li');
+            var t_mall = document.getElementById('t_mall');
+            //记录鼠标点击的位置
+            var beginX = 0;
+            //2遍历
+            for (var i = 0; i<lis.length;i++){
+                //2.1获取单个的li标签
+                 var li = lis[i];
+                 //2.2鼠标进入li
+                li.onmouseover = function () {
+                    end = this.offsetLeft;
+                    console.log(end);
+                }
+                //2.3监听鼠标按下对应的li
+                li.onmousedown = function () {
+                    console.log(this.offsetLeft);
+                    beginX = this.offsetLeft;
+                }
+                 li.onmouseout = function () {
+                     end = beginX;
+                 }
+            }
+            //3缓动动画
+            var begin = 0, end = 0;
+            clearInterval()
+            setInterval(function () {
+                begin = begin +(end - begin)*0.8;
+                t_mall.style.left = begin + 'px';
+            },10)
+        }
+    </script>
+</body>
+</html>

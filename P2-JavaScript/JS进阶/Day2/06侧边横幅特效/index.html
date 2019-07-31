@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>侧边横幅广告特效</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        #content{
+            width: 1800px;
+            margin: 0 auto;
+        }
+        #ad_float{
+            position: absolute;
+            left: 0;
+            top: 150px;
+        }
+        #ad_float img {
+            width: 150px;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="ad_float"><img src="images/float.jpg" alt=""></div>
+<div id="content">
+    <p>上课好好听听</p>
+    <p>上课好好听听</p>
+    <p>上课好好听听</p>
+    <p>上课好好听听</p>
+    <p>上课好好听听</p>
+
+    <p>上课好好听听</p>
+    <p>上课好好听听</p>
+    <p>上课好好听听</p>
+    <p>上课好好听听</p>
+    <p>上课好好听听</p>
+    <p>上课好好听听</p>
+
+    <p>上课好好听听</p>
+    <p>上课好好听听</p>
+    <p>上课好好听听</p>
+    <p>上课好好听听</p>
+    <p>上课好好听听</p>
+    <p>上课好好听听</p>
+
+    <p>上课好好听听</p>
+    <p>上课好好听听</p>
+    <p>上课好好听听</p>
+    <p>上课好好听听</p>
+    <p>上课好好听听</p>
+    <p>上课好好听听</p>
+
+    <p>上课好好听听</p>
+    <p>上课好好听听</p>
+    <p>上课好好听听</p>
+    <p>上课好好听听</p>
+    <p>上课好好听听</p>
+    <p>上课好好听听</p>
+
+    <p>上课好好听听</p>
+    <p>上课好好听听</p>
+    <p>上课好好听听</p>
+    <p>上课好好听听</p>
+    <p>上课好好听听</p>
+    <p>上课好好听听</p>
+
+    <p>上课好好听听</p>
+    <p>上课好好听听</p>
+    <p>上课好好听听</p>
+    <p>上课好好听听</p>
+    <p>上课好好听听</p>
+    <p>上课好好听听</p>
+
+    <p>上课好好听听</p>
+    <p>上课好好听听</p>
+    <p>上课好好听听</p>
+    <p>上课好好听听</p>
+    <p>上课好好听听</p>
+    <p>上课好好听听</p>
+
+    <p>上课好好听听</p>
+    <p>上课好好听听</p>
+    <p>上课好好听听</p>
+    <p>上课好好听听</p>
+    <p>上课好好听听</p>
+    <p>上课好好听听</p>
+
+    <p>上课好好听听</p>
+</div>
+<script src="js/myFunc.js"></script>
+<script>
+    window.onload = function () {
+        //1.获取广告头部的高度
+        var offset_Top  = $('ad_float').offsetTop;
+        console.log('offset_Top:'+offset_Top);
+        //2.监听窗口的滚动
+        var begin = 0,end =0,timer = null;
+
+        window.onscroll = function () {
+            //2.1清楚定时器
+            clearInterval(timer);
+            //2.2获取滚动高度
+            var scroll_top = scroll().top;
+            end  = offset_Top + scroll_top;
+            console.log('end:'+end);
+            //2.3缓动动画
+            timer = setInterval(function () {
+                begin = begin+(end - begin)*0.2;
+                $('ad_float').style.top = begin +'px';
+                console.log('offset_Top2222:'+$('ad_float').style.top);
+                console.log(begin, end);
+                //2.4清楚定时器
+                if (Math.round(begin) === end){
+                    clearInterval(timer);
+                }
+            },16);
+        }
+    }
+</script>
+</body>
+</html>

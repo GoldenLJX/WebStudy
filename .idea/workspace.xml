@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="96e99f18-0b0a-4357-93f6-af8a1a38e478" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/P3JS高级进阶/Day1面向对象精讲/01构造函数面向对象.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="743">
+              <caret line="97" column="7" lean-forward="true" selection-start-line="97" selection-start-column="7" selection-end-line="97" selection-end-column="7" />
+              <folding>
+                <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#script#2;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#script#4;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/P3JS高级进阶/Day1面向对象精讲/02构造函数.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/P3JS高级进阶/Day1面向对象精讲/03构造函数的参数优化.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/P3JS高级进阶/Day1面向对象精讲/04构造函数的终极优化.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>clearfix</find>
+      <find>sm-span8</find>
+      <find>wow</find>
+      <find>fadeInLeftBig</find>
+      <find>media</find>
+      <find>font-size</find>
+      <find>rem</find>
+      <find>footer</find>
+      <find>middle-arcticle</find>
+      <find>smue-left-about</find>
+      <find>box-wrap</find>
+      <find>smue-text-obj</find>
+      <find>box-main</find>
+      <find>box-main-content</find>
+      <find>菜单</find>
+      <find>定位</find>
+      <find>sen</find>
+      <find>导航</find>
+      <find>@media</find>
+      <find>middle-article</find>
+      <find>entry-content</find>
+      <find>site-content</find>
+      <find>content</find>
+      <find>primary</find>
+      <find>type-page</find>
+      <find>main</find>
+      <find>site-main</find>
+      <find>article</find>
+      <find>first-child</find>
+      <find>$</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Sparelax" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/P5-小型框架/Day1/ScrollReveal/01ScrollReveal初体验.html" />
+        <option value="$PROJECT_DIR$/P5-小型框架/Day1/Less/less/index.less" />
+        <option value="$PROJECT_DIR$/P5-小型框架/Day1/Less/01less初体验.html" />
+        <option value="$PROJECT_DIR$/P5-小型框架/Day1/Less/02-local/02本地化使用less.html" />
+        <option value="$PROJECT_DIR$/P5-小型框架/Day1/Less/02-local/less/test.less" />
+        <option value="$PROJECT_DIR$/P5-小型框架/Day1/Less/02-local/03less的混合.html" />
+        <option value="$PROJECT_DIR$/P5-小型框架/Day1/Less/02-local/less/hunhe.less" />
+        <option value="$PROJECT_DIR$/P5-小型框架/Day1/Less/02-local/0.html" />
+        <option value="$PROJECT_DIR$/P5-小型框架/Day1/Less/02-local/less/hanshu.less" />
+        <option value="$PROJECT_DIR$/P5-小型框架/Day1/Less/02-local/05less的匹配.html" />
+        <option value="$PROJECT_DIR$/P5-小型框架/Day1/Less/02-local/less/pipei.less" />
+        <option value="$PROJECT_DIR$/P5-小型框架/Day1/Animate/02animate个性化定制.html" />
+        <option value="$PROJECT_DIR$/P5-小型框架/Day2/01swiper/01swiper初体验.html" />
+        <option value="$PROJECT_DIR$/P5-小型框架/Day2/01swiper/02swiper的基础配置.html" />
+        <option value="$PROJECT_DIR$/P5-小型框架/Day2/02nprogress/index.html" />
+        <option value="$PROJECT_DIR$/P5-小型框架/Day2/03echart/01折线图.html" />
+        <option value="$PROJECT_DIR$/P5-小型框架/Day3/01ES6语法/01let和const.html" />
+        <option value="$PROJECT_DIR$/P5-小型框架/Day3/01ES6语法/02高级排他.html" />
+        <option value="$PROJECT_DIR$/P5-小型框架/Day3/01ES6语法/04延展操作符.html" />
+        <option value="$PROJECT_DIR$/测试函数名和函数.html" />
+        <option value="$PROJECT_DIR$/P6-Vue/Day1/01Vue初体验.html" />
+        <option value="$PROJECT_DIR$/P6-Vue/Day1/02Vue指令.html" />
+        <option value="$PROJECT_DIR$/P6-Vue/Day1/03Vue-once.html" />
+        <option value="$PROJECT_DIR$/P6-Vue/Day1/04Vue v-if.html" />
+        <option value="$PROJECT_DIR$/P6-Vue/Day1/05Vue v-show.html" />
+        <option value="$PROJECT_DIR$/P6-Vue/Day1/05Vue v-else.html" />
+        <option value="$PROJECT_DIR$/P6-Vue/Day1/07Vue v-else-if.html" />
+        <option value="$PROJECT_DIR$/P6-Vue/Day1/08Vue-v-for.html" />
+        <option value="$PROJECT_DIR$/P6-Vue/Day1/09Vue-v-for小案例.html" />
+        <option value="$PROJECT_DIR$/P6-Vue/Day1/10Vue-v-text和v-html.html" />
+        <option value="$PROJECT_DIR$/P6-Vue/Day1/11Vue-v-bind.html" />
+        <option value="$PROJECT_DIR$/P6-Vue/Day1/12Vue-v-bind补充.html" />
+        <option value="$PROJECT_DIR$/P6-Vue/Day1/13Vue-v-on.html" />
+        <option value="$PROJECT_DIR$/P6-Vue/Vue计算属性/01vue计算属性.html" />
+        <option value="$PROJECT_DIR$/P6-Vue/Vue组件/01Vue组件初体验.html" />
+        <option value="$PROJECT_DIR$/P6-Vue/Vue组件/02Vue局部组件.html" />
+        <option value="$PROJECT_DIR$/P6-Vue/Vue组件/01Vue全局组件的补充.html" />
+        <option value="$PROJECT_DIR$/P6-Vue/Vue组件/04Vue局部组件的补充.html" />
+        <option value="$PROJECT_DIR$/P6-Vue/Vue组件/05Vue的父子组件.html" />
+        <option value="$PROJECT_DIR$/P6-Vue/Vue组件/06Vue的template.html" />
+        <option value="$PROJECT_DIR$/P6-Vue/Vue组件/07Vue的script标签.html" />
+        <option value="$PROJECT_DIR$/P6-Vue/Vue组件/08挂载选项data.html" />
+        <option value="$PROJECT_DIR$/P6-Vue/Vue组件/09验证data必须是函数.html" />
+        <option value="$PROJECT_DIR$/P6-Vue/Vue组件/10Vue的组件通信.html" />
+        <option value="$PROJECT_DIR$/P6-Vue/Vue组件/11Vue的多层组件通信.html" />
+        <option value="$PROJECT_DIR$/P6-Vue/Vue组件/12vue的自定义事件.html" />
+        <option value="$PROJECT_DIR$/P6-Vue/Vue组件/13vue.html" />
+        <option value="$PROJECT_DIR$/P6-Vue/Vue组件/14vue的实名插槽.html" />
+        <option value="$PROJECT_DIR$/P6-Vue/Vue组件/13vue的匿名插槽.html" />
+        <option value="$PROJECT_DIR$/P5-小型框架/Day3/01ES6语法/03解构赋值.html" />
+        <option value="$PROJECT_DIR$/P3JS高级进阶/Day1面向对象精讲/01构造函数面向对象.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="777" />
+    <option name="y" value="6" />
+    <option name="width" value="1124" />
+    <option name="height" value="1047" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <showMembers ProjectPane="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="Web Project" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="H:\Web Project" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="WebProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebProject" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebProject" type="462c0819:PsiDirectoryNode" />
+              <item name="P3JS高级进阶" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebProject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebProject" type="462c0819:PsiDirectoryNode" />
+              <item name="P3JS高级进阶" type="462c0819:PsiDirectoryNode" />
+              <item name="Day1面向对象精讲" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="javascript.nodejs.core.library.configured.version" value="10.16.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/P6-Vue/Vue组件" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path" value="D:/node" />
+    <property name="nodejs_package_manager_path" value="D:/node_modules/npm" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="H:\WebProject\P6-Vue\Vue组件" />
+      <recent name="H:\WebProject\P6-Vue\Vue计算属性" />
+      <recent name="H:\WebProject\P6-Vue\Day1" />
+      <recent name="H:\WebProject\P6-Vue\Day1\js" />
+      <recent name="H:\WebProject\P5-小型框架\Day2\03echart" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="H:\WebProject\P3JS高级进阶" />
+      <recent name="H:\WebProject\P5-小型框架\Day1\Less\01-service" />
+      <recent name="H:\WebProject\JS进阶\day6\01网易轮播效果图\css" />
+      <recent name="H:\Web Project\JS进阶\day6\闭包" />
+      <recent name="H:\Web Project\JS进阶\Day2\05中部导航吸顶\js" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.04less的函数.html">
+    <configuration name="04-jQuery展开&amp;收起动画案例-显示隐藏更多.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebProject/jQuery Project/Day2/04-jQuery展开&amp;收起动画案例-显示隐藏更多.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="04构造函数的终极优化.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebProject/JS高阶进级/Day1/04构造函数的终极优化.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="04less的函数.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebProject/P5-小型框架/Day1/Less/02-local/04less的函数.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="闭包模块.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebProject/JS高阶进级/Day3/闭包模块.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="backstage.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/WebProject/Sparelax/backstage.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.04less的函数.html" />
+        <item itemvalue="JavaScript Debug.04-jQuery展开&amp;收起动画案例-显示隐藏更多.html" />
+        <item itemvalue="JavaScript Debug.backstage.html" />
+        <item itemvalue="JavaScript Debug.闭包模块.html" />
+        <item itemvalue="JavaScript Debug.04构造函数的终极优化.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="96e99f18-0b0a-4357-93f6-af8a1a38e478" name="Default Changelist" comment="" />
+      <created>1556241791882</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1556241791882</updated>
+      <workItem from="1556241793887" duration="555000" />
+      <workItem from="1556242363575" duration="7451000" />
+      <workItem from="1556260863207" duration="9487000" />
+      <workItem from="1556328388745" duration="3156000" />
+      <workItem from="1556499540858" duration="17422000" />
+      <workItem from="1556588883192" duration="19759000" />
+      <workItem from="1556672571180" duration="9560000" />
+      <workItem from="1556691942126" duration="7865000" />
+      <workItem from="1556760311519" duration="11316000" />
+      <workItem from="1557104231627" duration="11639000" />
+      <workItem from="1557130334444" duration="7047000" />
+      <workItem from="1557190624799" duration="8123000" />
+      <workItem from="1557208673574" duration="14250000" />
+      <workItem from="1557277773960" duration="16927000" />
+      <workItem from="1557364120788" duration="5547000" />
+      <workItem from="1557450653390" duration="21452000" />
+      <workItem from="1557538076020" duration="576000" />
+      <workItem from="1558919180175" duration="444000" />
+      <workItem from="1558919783540" duration="9857000" />
+      <workItem from="1559033152302" duration="1403000" />
+      <workItem from="1559118406456" duration="1172000" />
+      <workItem from="1559269265306" duration="23469000" />
+      <workItem from="1559524005110" duration="10593000" />
+      <workItem from="1559612782869" duration="12933000" />
+      <workItem from="1559697712268" duration="9567000" />
+      <workItem from="1559786202019" duration="1878000" />
+      <workItem from="1560128771428" duration="5036000" />
+      <workItem from="1560224240062" duration="13514000" />
+      <workItem from="1560302647791" duration="9293000" />
+      <workItem from="1560323368859" duration="3295000" />
+      <workItem from="1560391188596" duration="4757000" />
+      <workItem from="1560407789353" duration="10483000" />
+      <workItem from="1560475702066" duration="11008000" />
+      <workItem from="1560502843766" duration="3239000" />
+      <workItem from="1560733492214" duration="11939000" />
+      <workItem from="1560839834628" duration="3395000" />
+      <workItem from="1560906155746" duration="6856000" />
+      <workItem from="1560996551101" duration="10863000" />
+      <workItem from="1561079898423" duration="5674000" />
+      <workItem from="1561424787505" duration="4174000" />
+      <workItem from="1561511826589" duration="12878000" />
+      <workItem from="1561598534917" duration="18933000" />
+      <workItem from="1561686408575" duration="13878000" />
+      <workItem from="1561715649249" duration="551000" />
+      <workItem from="1561942597067" duration="3905000" />
+      <workItem from="1561947758419" duration="17062000" />
+      <workItem from="1562030374158" duration="12975000" />
+      <workItem from="1562124010268" duration="10928000" />
+      <workItem from="1562202378247" duration="1226000" />
+      <workItem from="1562222156712" duration="7180000" />
+      <workItem from="1562290618974" duration="15135000" />
+      <workItem from="1562376826098" duration="2612000" />
+      <workItem from="1562549035163" duration="9297000" />
+      <workItem from="1562653453655" duration="2752000" />
+      <workItem from="1562659313626" duration="389000" />
+      <workItem from="1562808338150" duration="4258000" />
+      <workItem from="1562831648628" duration="1353000" />
+      <workItem from="1562893366618" duration="2141000" />
+      <workItem from="1563155239769" duration="18564000" />
+      <workItem from="1563242046195" duration="13693000" />
+      <workItem from="1563334568359" duration="599000" />
+      <workItem from="1563414907139" duration="15364000" />
+      <workItem from="1563498557340" duration="8925000" />
+      <workItem from="1563586322071" duration="4734000" />
+      <workItem from="1563758070986" duration="16122000" />
+      <workItem from="1563845290271" duration="12043000" />
+      <workItem from="1563948339359" duration="25000" />
+      <workItem from="1564025778070" duration="1379000" />
+      <workItem from="1564372382227" duration="9199000" />
+      <workItem from="1564449390898" duration="12944000" />
+      <workItem from="1564536224278" duration="6363000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="604381000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="777" y="6" width="1124" height="1047" extended-state="1" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28913444" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3275488" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.5889371" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.329718" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32924107" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2118019" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32924107" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32924107" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="master" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/P5-小型框架/Day2/01swiper/js/swiper.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P5-小型框架/Day2/01swiper/js/swiper.esm.bundle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3088">
+          <caret line="2787" column="24" lean-forward="true" selection-start-line="2787" selection-start-column="24" selection-end-line="2787" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P5-小型框架/Day2/01swiper/css/swiper.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P5-小型框架/Day2/01swiper/01swiper初体验.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P5-小型框架/Day2/01swiper/02swiper的基础配置.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="36" column="25" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P5-小型框架/Day2/02nprogress/css/nprogress.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P5-小型框架/Day2/02nprogress/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P5-小型框架/Day2/03echart/css/nprogress.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P5-小型框架/Day2/03echart/01折线图.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P5-小型框架/Day3/01ES6语法/01let和const.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
+          <folding>
+            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#script#2;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P5-小型框架/Day3/01ES6语法/02高级排他.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1650">
+          <caret line="55" column="42" selection-start-line="55" selection-start-column="42" selection-end-line="55" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/测试函数名和函数.html" />
+    <entry file="file://$PROJECT_DIR$/Tab/index.html" />
+    <entry file="file://$PROJECT_DIR$/P5-小型框架/Day3/01ES6语法/04延展操作符.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+          <folding>
+            <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P6-Vue/Vue指令/js/vue.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P6-Vue/Vue指令/01Vue初体验.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P6-Vue/Vue指令/02Vue指令.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P6-Vue/Vue指令/03Vue-once.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="12" column="33" lean-forward="true" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P6-Vue/Vue指令/04Vue v-if.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P6-Vue/Vue指令/06Vue v-else.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P6-Vue/Vue指令/05Vue v-show.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P6-Vue/Vue指令/07Vue v-else-if.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P6-Vue/Vue指令/08Vue-v-for.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="20" column="20" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P6-Vue/Vue指令/09Vue-v-for小案例.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P6-Vue/Vue计算属性/js/vue.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P6-Vue/Vue计算属性/01vue计算属性.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="563">
+          <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P6-Vue/Vue组件/js/vue.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P6-Vue/Vue组件/02Vue局部组件.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P6-Vue/Vue组件/01Vue组件初体验.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="19" column="33" lean-forward="true" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P6-Vue/Vue组件/03Vue全局组件的补充.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P6-Vue/Vue组件/04Vue局部组件的补充.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="13" column="33" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P6-Vue/Vue组件/05Vue的父子组件.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P6-Vue/Vue组件/07Vue的script标签.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="683">
+          <caret line="32" column="7" lean-forward="true" selection-end-line="32" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P6-Vue/Vue指令/11Vue-v-bind.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P6-Vue/Vue指令/12Vue-v-bind补充.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P6-Vue/Vue组件/14vue的实名插槽.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="7" column="14" lean-forward="true" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P6-Vue/Vue组件/06Vue的template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P6-Vue/Vue组件/08挂载选项data.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P6-Vue/Vue组件/09验证data必须是函数.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P6-Vue/Vue组件/10Vue的组件通信.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P6-Vue/Vue指令/13Vue-v-on.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P6-Vue/Vue指令/10Vue-v-text和v-html.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P6-Vue/Vue组件/11Vue的多层组件通信.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P6-Vue/Vue组件/12vue的自定义事件.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="29" column="15" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P6-Vue/Vue组件/13vue的匿名插槽.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="632">
+          <caret line="42" column="42" selection-start-line="42" selection-start-column="42" selection-end-line="42" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P5-小型框架/Day3/01ES6语法/03解构赋值.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+          <folding>
+            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P2-JavaScript/JS进阶/day6/01网易轮播效果图/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="14" column="49" lean-forward="true" selection-start-line="14" selection-start-column="49" selection-end-line="14" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P3JS高级进阶/Day1面向对象精讲/01构造函数面向对象.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="743">
+          <caret line="97" column="7" lean-forward="true" selection-start-line="97" selection-start-column="7" selection-end-line="97" selection-end-column="7" />
+          <folding>
+            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#script#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#script#4;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P3JS高级进阶/Day1面向对象精讲/02构造函数.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P3JS高级进阶/Day1面向对象精讲/03构造函数的参数优化.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P3JS高级进阶/Day1面向对象精讲/04构造函数的终极优化.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+  </component>
+</project>

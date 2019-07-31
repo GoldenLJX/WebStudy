@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script id="数组的延展" type="text/html" >
+    let arr1 = ['a','b','c'];
+    let arr2 = ['1','2','3'];
+    let arr = [...arr1,...arr2];
+    console.log(arr);
+</script>
+<script id="对象的延展" type="text/html">
+    let arr1 = {name:'Golden',age:18};
+    let arr2 = {name1:'Anna',age1:26};
+    let Arr = {...arr1,...arr2}
+    console.log(Arr);
+</script>
+<script>
+    function getMinValue() {
+        console.log(Math.max(...arguments));
+    }
+    getMinValue(1, -88, 2, 10, 9);
+
+    function testArgument(aaa) {
+        console.log(arguments.valueOf());
+    }
+    testArgument(1);
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+        span{
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span class="king">King</span>
+        <span class="black">Black</span>
+    </div>
+<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+    $(function () {
+       //想把span的事件委托给父标签使用
+        //第一个参数就是type事件类型
+        //第二个参数就是'委托方的标签'
+        //第三个就是回调函数
+        $('div').on('click','span',function (event) {
+            console.log(event.target);
+            console.log(event.target.className);
+        })
+    });
+</script>
+</body>
+</html>

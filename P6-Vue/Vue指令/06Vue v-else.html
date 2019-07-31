@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+<!--    v-show是真的会将dom创建出来的,但是只有当条件满足的时候才会显示出来,不满足的时候用css样式隐藏掉-->
+
+    <p v-if="msg>20">{{msg}}</p>
+<!--   v-else一定要和v-if或者v-show配套使用-->
+    <p v-else>年龄不足20岁</p>
+</div>
+<script src="js/vue.js"></script>
+<script>
+    new Vue({
+        el:'#app',
+       data:{
+            msg:30
+       }
+    });
+</script>
+</body>
+</html>

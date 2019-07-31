@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            padding: 10px;
+            border: 2px solid #000;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+    $(function () {
+      var $box = $('#box');
+        console.log($box.width());
+        console.log($box.height());
+
+        //包括内边距
+        console.log($box.innerWidth());
+        console.log($box.innerHeight());
+        //包括外边距
+        console.log($box.outerWidth());
+        console.log($box.outerHeight());
+        //包括margin
+        console.log($box.outerWidth(true));
+        console.log($box.outerHeight(true));
+    });
+</script>
+</body>
+</html>

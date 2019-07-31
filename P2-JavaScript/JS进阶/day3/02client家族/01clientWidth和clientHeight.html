@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #box{
+            width: 200px;
+            height: 800px;
+            background-color: red;
+            border: 2px solid saddlebrown;
+        }
+    </style>
+</head>
+<body>
+<div id="box"></div>
+<script>
+    window.onload = function () {
+        console.log(document.body.clientWidth,document.body.clientHeight);
+        var box = document.getElementById('box');
+        console.log(onbeforeprint,box.clientTop);
+    }
+</script>
+</body>
+</html>

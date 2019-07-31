@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script src="js/myFunc.js"></script>
+<script>
+    window.onload = function () {
+        /**
+         * 当屏幕的宽度>=960时，页面的背景颜色为红色；当屏幕的宽度>=640时，
+         * 页面的背景颜色为蓝色；当屏幕的宽度<640时，页面的背景颜色为绿色？
+         */
+        window.onresize = function () {
+            console.log(client().width);
+            console.log(window.client().width);
+
+            if(client().width>=960){
+                document.body.style.backgroundColor = 'red';
+            }else  if(client().width>640){
+                document.body.style.backgroundColor = 'blue';
+            }else{
+                document.body.style.backgroundColor = 'green';
+            }
+        }
+    }
+</script>
+</body>
+</html>

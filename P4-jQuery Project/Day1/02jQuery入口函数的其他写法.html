@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script
+            src="https://code.jquery.com/jquery-1.12.4.js"
+            integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+            crossorigin="anonymous"></script>
+    <script>
+
+        <!--  第1种写法 -->
+        $(document).ready(function () {
+            alert('hello world');
+        });
+        <!--       第2种写法-->
+        jQuery(document).ready(function () {
+            alert('hello world2');
+        });
+        <!--       第3种写法 (推荐)-->
+        $(function () {
+            alert('hello world3');
+        });
+        <!--  第4种写法 -->
+        jQuery(function () {
+            alert('hello world4');
+        });
+    </script>
+</head>
+<body>
+
+</body>
+</html>

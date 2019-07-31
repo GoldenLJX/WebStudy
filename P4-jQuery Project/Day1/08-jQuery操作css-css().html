@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color:red;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <p></p>
+    <p></p>
+    <button id="get">获取样式</button>
+    <button id="set">设置样式</button>
+<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+    $(function () {
+       var $box = $('#box');
+       //获取样式
+       $('#get').click(function () {
+           var w = $box.css('width');
+           var h = $box.css('height');
+           var bg = $box.css('background-color');
+           console.log(w, h ,bg);
+       });
+       //设置样式
+        //方式一
+
+        // $('#set').click(function () {
+        //     var w = $box.css('width','300px');
+        //     var h = $box.css('height','300px');
+        //     var bg = $box.css('background-color','blue');
+        //     console.log(w, h ,bg);
+        // });
+        //方式二
+        $('#set').click(function () {
+            // var w = $box.css('width','300px');
+            // var h = $box.css('height','300px');
+            // var bg = $box.css('background-color','blue');
+            $box.css('width','400px').css('height','300px').css('background-color','yellow');
+        });
+        //方式三
+        $('#set').click(function () {
+            $box.css({
+                'width':'400px',
+                'height':'400px',
+                'background':'black',
+            });
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>上传图片</label>
+<input type="file" id="file">
+<script>
+    window.onload=function () {
+        // console.log($('file').valueOf());
+         var path = $('file').valueOf().toString();
+        //1获取标签
+
+        $('file').onchange = function () {
+            //2获取文件的路径
+            var path = this.value;
+            console.log(path);
+            //3截取文件名后缀
+            var sufix = path.substr(path.lastIndexOf('.'));
+            console.log(sufix);
+            var lower_sufix = sufix.toLowerCase();
+            if(lower_sufix ==='.jpg'||lower_sufix === '.png' ||lower_sufix === 'bmp'){
+                alert('上传正确');
+            }else{
+                alert('上传不正确');
+            }
+        }
+    }
+    function $(id) {
+        return typeof id ==='string' ?document.getElementById(id):null;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="http://www.baidu.com">
+    <input type="submit">
+</form>
+<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+    $(function () {
+       var $submit = $(':submit');
+        setTimeout(function () {
+            $submit.triggerHandler('click');
+        },2000);
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .ad{
+            width: 150px;
+            height: 300px;
+            position: fixed;
+            top: 50%;
+            background: url("images/ad.png") no-repeat;
+            margin-top: -150px;
+        }
+        .left{
+            left: 0;
+        }
+        .right{
+            right: 0;
+        }
+        .close{
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="ad left">
+        <img class="close" src="images/close.png" alt="">
+    </div>
+    <div class="ad right">
+        <img class="close" src="images/close.png" alt="">
+    </div>
+    <button id="show">show</button>
+    <button id="hide">hide</button>
+    <button id="toggle">toggle</button>
+<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+    $(function () {
+      $('#show').click(function () {
+          $('.ad').show(1000,function () {
+              console.log('show a moment');
+          });
+      });
+        $('#hide').click(function () {
+            $('.ad').hide(1000,function () {
+                console.log('hide a moment');
+            });
+        });
+        $('#toggle').click(function () {
+            $('.ad').toggle(1000,function () {
+                console.log('hide a moment');
+            });
+        });
+    });
+</script>
+</body>
+</html>

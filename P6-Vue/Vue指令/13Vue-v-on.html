@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <p :style="{color:fontColor}">{{msg}}</p>
+    <button v-on:click="msg = '我已经变了'">点我改变文本内容</button>
+    <button v-on:click="changeContent()">点我改变文本内容2</button>
+    <button @click="changeColor">点我改变文本颜色</button>
+</div>
+
+<script src="js/vue.js"></script>
+<script>
+    new Vue({
+        el:'#app',
+       data:{
+            msg:'今天天气不错!',
+           fontColor:'red',
+       },
+        methods: {
+            changeColor: function () {
+                this.fontColor='blue'
+            },
+            changeContent(){
+                this.msg='Golden is a cute boy!';
+            },
+        }
+    });
+</script>
+</body>
+</html>

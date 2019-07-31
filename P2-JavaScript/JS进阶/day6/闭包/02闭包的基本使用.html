@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function test() {
+        var age = 20;
+        return function () {
+            console.log(age);
+        }
+    }
+
+    var test2 = test();//用一个变量接收函数的返回值
+    console.log(test2);//这个输出的是return的值
+    test2();//这个可以得到age的值
+</script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>返回顶部</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        body{
+            background-color: #eccccc;
+        }
+        #box{
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+        #content{
+            width: 1000px;
+            margin:  0 auto;
+        }
+        #backToTop{
+            position: fixed;
+            right: 10px;
+            bottom: 20px;
+            cursor: pointer;
+            display: none;
+        }
+        #backToTop img{
+            width: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="content">
+
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+            <p>weather is bad</p>
+
+        </div>
+        <div id="backToTop"><img src="images/top.png" alt=""></div>
+    </div>
+    <script src="js/myFunc.js"></script>
+    <script>
+        window.onload = function () {
+            var begin = 0,end = 0 ,timer = null;
+            window.onscroll = function () {
+                if(scroll().top>0){
+                    $('backToTop').style.display = 'block';
+                }else{
+                    $('backToTop').style.display = 'none';
+                }
+                begin = scroll().top;
+            }
+            //监听点击事件
+            $('backToTop').onclick = function () {
+                clearInterval(timer);
+                timer = setInterval(function () {
+                    //这里注意一个小细节,就是这个begin 的值是根据定时器的时间差进行
+                    //改变的,所以最后/30要和定时器的30要一致
+                    begin = begin +(end - begin)/30;
+                    console.log(begin,end);
+
+                    window.scrollTo(0,begin);
+                    // scroll().top = 0+'px';//我的想法是让滚动条回到顶部
+                    if(Math.round(begin)===end){
+                        clearInterval(timer);
+                    }
+                },30);
+            }
+        }
+    </script>
+</body>
+</html>

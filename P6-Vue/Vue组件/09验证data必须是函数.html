@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <temp></temp>
+    <temp></temp>
+    <temp></temp>
+    <temp></temp>
+</div>
+<template type="text/template" id="temp">
+    <div>
+        <button @click="counter += 1">点击我的次数:{{counter}}</button>
+    </div>
+</template>
+<script src="js/vue.js"></script>
+<script>
+    //注册组件
+    Vue.component('temp',{
+        template:'#temp',
+
+        data(){
+            return {
+                counter:0
+            }
+        }
+    });
+
+    new Vue({
+        el:'#app',
+        data:{
+
+        }
+    });
+</script>
+</body>
+</html>

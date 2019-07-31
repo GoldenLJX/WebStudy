@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <my-parent :imgtitle="title" :imgsrc="img"></my-parent>
+</div>
+<template id="my_child_1">
+    <img :imgsrc="imgsrc" alt="" width="200px">
+</template>
+<template id="my_child_2">
+    <h2>{{title}}</h2>
+</template>
+<template id="my_parent">
+    <div>
+        <child1 :src="imgsrc"></child1>
+        <child2 :title="imgtitle"></child2>
+    </div>
+</template>
+<script src="js/vue.js"></script>
+<script>
+    //实例化子组件
+    let Child1 = Vue.extend({
+        template:'#my_child_1',
+        props:['imgsrc']
+    });
+    let Child2 = Vue.extend({
+        template:'#my_child_2',
+        props:['title']
+    });
+    //实例化父组件
+    Vue.component('my-parent',{
+        template:'#my_parent',
+        components:{
+            'child1':Child1,
+            'child2':Child2
+        },
+        props:['imgtitle','imgsrc']
+    })
+    new Vue({
+        el:'#app',
+       data:{
+           title:'如花是一个大傻逼',
+           img:'img/img_02.jpg'
+       }
+    });
+</script>
+</body>
+</html>

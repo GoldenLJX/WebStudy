@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>相对定位</title>
+    <style>
+/*<!--
+相对定位
+	1.开启元素的相对定位后，如果不设置偏移量元素不会发生任何变化
+	2.相对定位元素相对于其自身在文档流中的位置来定位
+	3.相对定位的元素不会脱离文档流
+	4.相对定位不会改变元素的性质，块元素还是块元素，内联元素还是内联元素
+	5.相对定位的元素会提升一个层级     -->*/
+
+
+#box1{
+    width: 200px;
+    height: 200px;
+    margin-left: 50px;
+    margin-top: 50px;
+    background-color: red;
+    /*float: left;*/
+}
+#box2{
+    width: 200px;
+    height: 200px;
+    margin-left: 50px;
+    margin-top: 50px;
+    background-color: peachpuff;
+    /*float: left;*/
+}
+#box3{
+    width: 200px;
+    height: 200px;
+    margin-left: 50px;
+    margin-top: 50px;
+    background-color: mediumpurple;
+    /*float: left;*/
+}
+#box4{
+    width: 200px;
+    height: 200px;
+    margin-left: 50px;
+    margin-top: 50px;
+    background-color: skyblue;
+    position: relative;
+    left: 60px;
+    bottom: 90px;
+
+}
+    </style>
+</head>
+<body>
+<div id="box1">box1</div>
+<div id="box2">box2</div>
+<div id="box3">box3</div>
+<div id="box4">box4</div>
+</body>
+</html>

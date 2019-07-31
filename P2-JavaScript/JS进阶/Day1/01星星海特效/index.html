@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>星星海</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        span {
+            background: url("images/star.png") no-repeat;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            background-size: 100% 100%;
+            animation: flash 1s alternate infinite;
+        }
+
+        @keyframes flash {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        span:hover {
+            transform: scale(3, 3) rotate(180deg);
+            transition: all 1s;
+        }
+    </style>
+</head>
+<body>
+<span></span>
+<script>
+    window.onload = function () {
+        // 1.获取屏幕大小尺寸
+        var screenW = document.documentElement.clientWidth;
+        var screenH = document.documentElement.clientHeight;
+        // console.log(screenW);
+        // console.log(screenH);
+        //2动态创建Span标签
+        for (var i = 0; i < 150; i++) {
+            var span = document.createElement('span');
+            //2.1将动态添加的标签,加入到body中
+            document.body.appendChild(span);
+            //2.2生成随机的位置
+            var x = Math.random() * screenW;
+            var y = Math.random() * screenH;
+            span.style.left = x + "px";
+            span.style.top = y + 'px';
+            //3.修改共同闪动问题
+            var rate = Math.random() * 1.5;
+            span.style.animationDelay = rate + 's';
+            //4修改星星大小不一
+            var scale = Math.random() * 1.5;
+            span.style.transform = 'scale('+ scale + ', ' + scale + ')';
+        }
+
+    }
+</script>
+</body>
+</html>

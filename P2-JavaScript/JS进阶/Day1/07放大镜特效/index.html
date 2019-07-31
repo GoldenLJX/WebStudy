@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>放大镜特效</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        #box{
+            margin: 100px;
+            width: 1000px;
+        }
+        #magnifying{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            display: none;
+            position: absolute;
+        }
+        #small{
+            width: 352px;
+            height: 380px;
+            border: 1px solid #e8e8e8;
+            background: url("images/pic001.jpg") no-repeat center;
+            cursor: move;
+        }
+        #big{
+            width: 800px;
+            height: 800px;
+            margin-left: 10px;
+            position: absolute;
+            left: 450px;
+            top: 100px;
+            border: 1px solid #e8e8e8;
+            background:url("images/pic01.jpg") blue no-repeat;
+            display: none;
+        }
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            width: 350px;
+        }
+        ul li img{
+            width: 57px;
+            height: 57px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <span id="magnifying"></span>
+        <div id="small"></div>
+        <ul>
+            <li><img src="images/pic001.jpg" alt=""></li>
+            <li><img src="images/pic002.jpg" alt=""></li>
+            <li><img src="images/pic003.jpg" alt=""></li>
+        </ul>
+        <div id="big"></div>
+    </div>
+    <script>
+        window.onload = function () {
+           //1.获取需要的标签
+            var lis = document.getElementsByTagName('li');
+            var small = document.getElementById('small');
+            var big = document.getElementById('big');
+            var magnifying = document.getElementById("magnifying");
+            //2.监听鼠标进入小盒子
+            small.onmouseover = function () {
+                magnifying.style.display = 'block';
+                big.style.display = 'block';
+                //2.1监听鼠标的移动
+                small.onmouseover = function (event) {
+                    var e = event || window.event;
+                    //2.2求出鼠标的坐标
+                    var x = e.clientX ;
+                    var y = e.clientY;
+                    console.log(x,y);
+                    magnifying.style.left = x +'px';
+                    magnifying.style.top = y +'px';
+                }
+            }
+            small.onmouseout = function () {
+                magnifying.style.display = 'none';
+                big.style.display = 'none';
+            }
+            for (var i = 0;i<lis.length;i++){
+
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #box{
+            width: 686px;
+            height: 300px;
+            margin: 100px auto;
+            border: 1px solid #c3c3c3;
+            text-align: center;
+            position: relative;
+        }
+        .left{
+            width: 343px;
+            height: 362px;
+            background: url("images/weiman_left.jpg");
+            float: left;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .right{
+            width: 343px;
+            height: 362px;
+            float: left;
+            background: url("images/weiman_right.jpg");
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <p>看我一下</p>
+        <div class="left curtain"></div>
+        <div class="right curtain"></div>
+    </div>
+<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $('body').click(function () {
+           $('.curtain').slideToggle(1000);
+       });
+        $('.left').click(function (event) {
+            event.stopPropagation();//防止冒炮事件传递
+            $(this).slideUp(1000);
+        });
+        $('.right').click(function (event) {
+            event.stopPropagation();//防止冒炮事件传递
+            $(this).slideUp(1000);
+        });
+    });
+</script>
+</body>
+</html>

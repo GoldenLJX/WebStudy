@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <my-slot>
+        <p slot="cpu">hahah </p>
+        <input type="date" name="" id="" slot="gpu">
+    </my-slot>
+</div>
+<template id="temp">
+    <div>
+        <slot name="cpu">我是一个任意可以替换的插槽</slot>
+        <slot name="gpu">我是一个任意可以替换的插槽</slot>
+        <slot name="hard-disk">我是一个任意可以替换的插槽</slot>
+    </div>
+</template>
+<script src="js/vue.js"></script>
+<script>
+    Vue.component('my-slot',{
+        template:'#temp'
+    });
+    new Vue({
+        el:'#app',
+       data:{
+
+       }
+    });
+</script>
+</body>
+</html>

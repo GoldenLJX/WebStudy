@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>进度条特效</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        #progress{
+            width: 1000px;
+            height: 35px;
+            margin: 100px auto;
+            position: relative;
+        }
+        #progress-bar{
+            width: 950px;
+            height: 100%;
+            background-color: #ccc;
+            border-radius: 5px;
+            position: relative;
+        }
+        #progress_bar_fg{
+            width: 0;
+            height: 100%;
+            background-color: orangered;
+            border-bottom-left-radius: 5px;
+            border-top-left-radius: 5px;
+        }
+        span{
+            width:25px;
+            height: 50px;
+            background-color: orangered;
+            position: absolute;
+            top:-7px;
+            border-radius: 5px;
+        }
+        #progress-value{
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="progress">
+        <div id="progress-bar">
+            <div id="progress_bar_fg"></div>
+            <span></span>
+
+        </div>
+        <div id="progress-value"></div>
+    </div>
+    <script>
+        window.onload = function () {
+            //1，获取需要的事件源
+            var progress = document.getElementById('progress');
+            var progress_bar = progress.children[0];
+            var progress_bar_fg = document.getElementById('progress_bar_fg');
+            var span = document.getElementsByTagName('span')[0];
+            var value= document.getElementById('progress-value');
+            //2，监听span按下事件
+            span.onmousedown = function (event) {
+                var e = event || window.event;
+                //2.1获取初始位置
+                var offsetLeft = e.clientX - span.offsetLeft;
+                console.log("span.offsetLeft:"+span.offsetLeft);//0
+                console.log("offsetLeft："+offsetLeft);
+                //2.2监听鼠标移动
+                document.onmousemove = function (event) {
+                    var e = event || window.event;
+                    console.log("e.clientX"+e.clientX);
+                    var x = e.clientX - offsetLeft;//鼠标移动的位置 - 去一开始鼠标点击的位置
+                    console.log("x"+x);
+                    //边界值处理
+                    if(x<0){
+                        x = 0;
+                    }else if(x >= progress_bar.offsetWidth - span.offsetWidth){
+                        x = progress_bar.offsetWidth - span.offsetWidth;
+                    }
+                    //走起来
+                    span.style.left = x + 'px';
+                    progress_bar_fg.style.width = x+'px';
+                    console.log((progress_bar.offsetWidth - span.offsetWidth));
+                    value.innerText = parseInt(x/(progress_bar.offsetWidth-span.offsetWidth)*100)+"%";
+                    return false;
+                };
+                //监听鼠标抬起的时候
+                document.onmouseup = function () {
+                    document.onmousemove = null;
+                }
+            }
+
+        }
+    </script>
+</body>
+</html>

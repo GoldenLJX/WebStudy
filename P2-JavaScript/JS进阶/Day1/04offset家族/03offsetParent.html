@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            position: relative;
+            margin: 10px auto;
+        }
+        span{
+            width: 10px;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <span>qweqweqwe</span>
+</div>
+<script>
+    window.onload = function () {
+        var box = document.getElementById('box');
+        var  span =  document.getElementsByTagName('span')[0];
+        console.log(span.parentNode);
+        //返回当前对象的父级（带有定位）盒子，可能是父亲、也可能是爷爷：
+        console.log(span.offsetParent);
+        /**
+         * offsetParent和parentNode的区别？
+         * 就是parentNode不需要父标签有定位,而offsetParent
+         * 如果当前元素的父级元素没有进行CSS定位（position：absolute 或 relative），则其offsetParent为body；
+         * 如果当前元素的父级元素中有CSS定位（position：absolute或relative），offsetParent取最近的那个父级元素。
+         */
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>圣诞节</p>
+<button id="btn">点我修改</button>
+<script src="js/jquery-3.3.1.js"></script>
+<script>
+<!--    在JS的代码中使用JQuery也是可以的,因为jQuery本身就是JS的封装,前提是要先引用JQuery的包-->
+window.onload = function () {
+$('#btn').on('click',function () {
+$('p').html('清明节');
+})
+}
+</script>
+</body>
+</html>

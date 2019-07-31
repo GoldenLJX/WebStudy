@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/html">
+    window.onload=function () {
+        /*
+        * var不能定义常量
+        * var可以重复声明变量
+        * var存在变量提升
+        * var不支持块作用域
+        * */
+
+        //var不能定义常量
+        var PI = 3.14;
+        console.log(PI);
+        PI = 6.1;
+        console.log(PI);
+
+        //var可以重复声明变量
+        var str = 'Golden';
+        console.log(str);
+        var str = 'Anna';
+        console.log(str);
+
+        //var存在变量提升
+        //代码从上往下执行,当执行到这里的时候,系统发现这个age没有定义,就往下找,会提前帮我们定一个age
+        console.log(age);
+        var age = 18;
+        f();
+        //var不支持块作用域
+        function f() {
+            var name = '李四';
+            console.log('qqqqqqqqq'+name);
+        }
+
+        console.log(name);
+    }
+</script>
+<script id="重复声明变量" type="text/html">
+    let site = 'itlike';
+    console.log(site);
+    let site = 'Giolkden';
+    console.log(site);
+</script>
+<script id="变量提升" type="text/html">
+    console.log(site);
+    let site = 'Giolkden';
+</script>
+<script id="常量">
+    // const PI= 3.14;
+    // PI = 90.3;
+    const LK= {
+        name:'Golden',
+        intro:'Man'
+    };
+    // LK={},一级的对象是不能修改常量的,因为他是保存的一个地址,不能直接修改,但是可以修改属性
+    // LK.name ='Anna';
+    console.log(LK);
+
+</script>
+</body>
+</html>

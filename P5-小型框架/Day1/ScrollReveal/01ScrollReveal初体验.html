@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        div{
+            width: 900px;
+            margin: 0 auto;
+        }
+        ul{
+            width: 900px;
+        }
+        li{
+            width: 200px;
+            height: 300px;
+            margin: 10px 20px;
+            float: left;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <ul>
+        <li class="sr"></li>
+        <li class="sr"></li>
+        <li class="sr"></li>
+        <li class="sr"></li>
+        <li class="sr"></li>
+        <li class="sr"></li>
+        <li class="sr"></li>
+        <li class="sr"></li>
+        <li class="sr"></li>
+        <li class="sr"></li>
+        <li class="sr"></li>
+        <li class="sr"></li>
+        <li class="sr"></li>
+        <li class="sr"></li>
+        <li class="sr"></li>
+        <li class="sr"></li>
+        <li class="sr"></li>
+        <li class="sr"></li>
+        <li class="sr"></li>
+        <li class="sr"></li>
+        <li class="sr"></li>
+        <li class="sr"></li>
+        <li class="sr"></li>
+        <li class="sr"></li>
+        <li class="sr"></li>
+        <li class="sr"></li>
+        <li class="sr"></li>
+        <li class="sr"></li>
+        <li class="sr"></li>
+        <li class="sr"></li>
+        <li class="sr"></li>
+        <li class="sr"></li>
+        <li class="sr"></li>
+        <li class="sr"></li>
+        <li class="sr"></li>
+        <li class="sr"></li>
+        <li class="sr"></li>
+        <li class="sr"></li>
+        <li class="sr"></li>
+        <li class="sr"></li>
+    </ul>
+</div>
+<script type="text/javascript" src="js/scrollreveal.min.js"></script>
+<script type="text/javascript">
+    window.onload = function () {
+        var config = {
+            reset: false, // 滚动鼠标时，动画开关
+            origin: 'bottom', // 动画开始的方向
+            duration: 500, // 动画持续时间
+            delay: 0, // 延迟
+            rotate: {x:80, y:0, z:0}, // 过度到0的初始角度
+            opacity: 0, // 初始透明度
+            scale: 0.9, //缩放
+            easing: 'cubic-bezier(0.6, 0.2, 0.2, 1)', // 缓动'ease', 'ease-in-out'，'linear'...
+            // 回调函数
+            beforeReveal: function(domEl){},
+            beforeReset: function(domEl){},
+            afterReveal: function(domEl){},
+            afterReset: function(domEl){}
+        };
+
+        window.sr = ScrollReveal();
+        /**
+         * reveal();里边的参数,第一个是目标元素,第二个是对象
+         */
+        sr.reveal('.sr', config);
+    }
+</script>
+</body>
+</html>

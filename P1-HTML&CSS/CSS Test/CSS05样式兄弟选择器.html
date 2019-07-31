@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .main{
+            background: green;
+        }
+        /*查找后边的一个兄弟元素*/
+        div + p {
+            color: red;
+        }
+        div ~ p{
+            color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <span>
+            <p>div种的p标签</p>
+        </span>
+    </div>
+<p>div相邻的段落标签1</p>
+    <p>div相邻的段落标签2</p>
+    <p>div相邻的段落标签3</p>
+    <p>div相邻的段落标签4</p>
+</body>
+</html>

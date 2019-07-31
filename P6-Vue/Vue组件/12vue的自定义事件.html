@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <my-btn @total="allCount()"></my-btn>
+    <my-btn @total="allCount()"></my-btn>
+    <my-btn @total="allCount()"></my-btn>
+    <my-btn @total="allCount()"></my-btn>
+    <my-btn @total="allCount()"></my-btn>
+    <p>一共点击了{{totalCount}}次</p>
+</div>
+<template id="temp">
+    <button @click="total()">点击了{{count}}次</button>
+</template>
+<script src="js/vue.js"></script>
+<script>
+    Vue.component('my-btn',{
+       template:'#temp',
+        data(){
+           return {
+               count:0
+           }
+        },
+        methods:{
+           total(){
+               this.count += 1;
+               this.$emit('total');
+           }
+        }
+    });
+    new Vue({
+        el:'#app',
+       data:{
+           totalCount:0
+       },
+        methods:{
+            allCount(){
+               this.totalCount += 1;
+            }
+        }
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/html">
+    var score = prompt("请输入成绩")
+    if(score>90){
+        console.log('优秀');
+    }else if(score>80){
+        console.log('良');
+    }else if(score>70){
+        console.log('一般');
+    }else if(score>60){
+        console.log('及格');
+    }else {
+        console.log('不及格');
+    }
+</script>
+<!--//从键盘输入，如果是偶数，则输出yes，否则输出no-->
+<script type="text/html">
+    var a = prompt("enter a number");
+    if(a%2 == 0){
+        console.log('yes');
+    }else{
+        console.log('no');
+    }
+</script>
+<!--用户输入1-7，判断是星期几-->
+    <script>
+<!--        别忘记了要将输入进来的东西变为数值类型-->
+    var a = +prompt("enter a number between 1 with 7");
+    if(1 === a){
+        console.log('monday');
+        console.log(typeof a);
+    }else if (2 == a) {
+        console.log('tuesday');
+    }else if (3 === a) {
+        console.log('wednesday');
+    }else if (4 === a) {
+        console.log('thursday');
+    }else if (5 === a) {
+        console.log('friday');
+    }else if (6 === a) {
+        console.log('saturday');
+    }else if (7 === a) {
+        console.log('sundaay');
+    }
+</script>
+
+</body>
+</html>

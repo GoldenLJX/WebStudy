@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <parent></parent>
+</div>
+<script src="js/vue.js"></script>
+<script>
+    let child1 = Vue.extend({
+        template:'<div><p>我是子组件1</p></div>'
+    });
+    let child2 = Vue.extend({
+        template:'<div><p>我是子组件2</p></div>'
+    });
+    Vue.component('parent',{
+        components:{
+            'child1':child1,
+            'child2':child2
+        },
+        template:'<div><child1></child1><child2></child2></div>'
+    });
+    new Vue({
+        el:'#app',
+       data:{
+
+       }
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        li {
+            background-color: #ccc;
+            height: 25px;
+            border: 1px solid #000;
+            cursor: pointer;
+        }
+
+        .current {
+            background-color: orangered;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li ></li>
+    <li class="current"></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+<script>
+    window.onload = function () {
+        //获取所有的li标签
+        var allLis = document.getElementsByTagName('li');
+        //method1使用for循环排他思想
+        /*
+        * 这个方法的弊端就是:消耗很多资源,每次都需要去遍历全部的li才能清除样式*/
+        // for (var i = 0 ;i <allLis.length;i++){
+        //     //获取单个li,鼠标进入时的效果
+        //     allLis[i].onmouseover = function () {
+        //         //先将其他没选中的清楚样式
+        //         for(var j = 0 ; j<allLis.length;j++){
+        //             allLis[j].className ='';
+        //         }
+        //         this.className = 'current';
+        //     }
+        // }
+
+
+        //method2高级的排他,闭包
+        var lastOne = 0;//使用一个变量标记current的当前位置,这个是根据li标签中,第一个current的位置来决定的
+        for (var i = 0; i < allLis.length; i++) {
+            //获取单个li,鼠标进入时的效果
+            (function (i) {
+                allLis[i].onmouseover = function () {
+                    allLis[lastOne].className = '';
+                    this.className = 'current';
+                    lastOne = i;
+                }
+            })(i);
+        }
+    }
+</script>
+</body>
+</html>

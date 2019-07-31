@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/html">
+    //字面量的对象命名方式
+    //优点:一目了然:属性和行为一下子就看出来了
+    /*缺点:创建的对象无法复用,复用性差
+        如果需要则要创建多个对象和复制代码,容易产生冗余
+    */
+
+
+    var p1 = {
+        name:'zhang',
+        age:18,
+        run:function () {
+            console.log('run');
+        }
+    }
+    var p2 = {
+    name:'zhang',
+    age:18,
+    run:function () {
+    console.log('run');
+    }
+    }
+    console.log(p1.name);
+</script>
+<script type="text/html">
+    //内置构造函数创建对象,缺点和上面一样
+    var p = new Object();
+    p.name = 'lisi';
+    p.run = function(){
+    console.log('run');
+    }
+    console.log(p.name);
+</script>
+<script>
+    //简单的工厂模式,工厂里面有一些产品的模板,只需要给工厂提供原材料
+</script>
+<script type="text/html">
+
+    function Person(name,age) {
+        //自动创建一个空对象,把这个对象的地址给了this
+        //var this = new Object();这个是内部自动帮我们做的
+        //2this给空对象绑定属性和行为
+        this.name = name;
+        this.age = age;
+        this.run = function () {
+            console.log("pao");
+        }
+        //3.返回this,不过不给我们看
+    }
+    var p1 = new Person('Golden',25);
+    console.log(p1.run());
+</script>
+<script type="text/html">
+    /*
+        1.如果不写返回值,直接返回默认创建的新对象
+        2.如果返回this,直接返回默认创建的新对象
+        3.如果返回基本的数据类型,直接返回默认创建的新对象
+        4.如果返回的是对象,那就是返回的是对象
+     */
+    function Person(name,age) {
+        this.name = name;
+        this.age = age;
+        this.run = function () {
+            console.log("pao");
+        }
+       // return this;
+        return {};
+    }
+    var p1 = new Person('Golden',25);
+    console.log(p1);
+</script>
+<script>
+    function Dog(name,age,dogFriends) {
+        //属性
+        this.name = name;
+        this.age = age;
+        this.dogFriends = dogFriends;
+
+        //行为
+        this.eat = function (something) {
+            console.log(this.name+'吃'+something);
+        }
+        this.run = function (somewhere) {
+            console.log(this.name+'跑'+somewhere);
+        }
+    }
+    var smallDog = new Dog('小花',29);
+    console.log(smallDog);
+</script>
+</body>
+</html>

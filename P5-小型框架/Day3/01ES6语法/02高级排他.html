@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        li{
+            background-color: #ccc;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .current{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li class="current">1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+    <li>11</li>
+    <li>12</li>
+    <li>13</li>
+    <li>14</li>
+    <li>15</li>
+    <li>16</li>
+    <li>17</li>
+    <li>18</li>
+    <li>19</li>
+    <li>20</li>
+</ul>
+<script>
+    window.addEventListener('load',function () {
+       //获取所有的li
+       let allLis = document.querySelectorAll('li');
+       let preIndex = 0;
+       for (let i=0,len = allLis.length;i<len;i++ ){
+           //获取当前的li标签
+           allLis[i].addEventListener('mouseover',function () {
+               console.log(i);
+               allLis[preIndex].className = '';
+               console.log(this.nodeName);
+               this.className = 'current';
+               preIndex = i;
+           })
+       }
+    });
+</script>
+</body>
+</html>

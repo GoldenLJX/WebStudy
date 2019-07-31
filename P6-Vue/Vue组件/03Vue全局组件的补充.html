@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <my-div>aaa</my-div>
+</div>
+<script src="js/vue.js"></script>
+<script>
+    //这种写法将创建注册器和注册一块写了
+    Vue.component('my-div',{
+        template:'<div><input type="date">' +
+            '<p>暗杀都好得很</p></div>'
+    });
+    new Vue({
+        el:'#app',
+       data:{
+            msg:'提起你就伤心'
+       }
+    });
+</script>
+</body>
+</html>
