@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="96e99f18-0b0a-4357-93f6-af8a1a38e478" name="Default Changelist" comment="" />
+    <list default="true" id="96e99f18-0b0a-4357-93f6-af8a1a38e478" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/P3JS高级进阶/Day2/01面向对象-三大特性（封装继承多台）.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/P3JS高级进阶/Day2/02面向对象-计算器.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -16,8 +21,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/P3JS高级进阶/Day1面向对象精讲/01构造函数面向对象.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="743">
-              <caret line="97" column="7" lean-forward="true" selection-start-line="97" selection-start-column="7" selection-end-line="97" selection-end-column="7" />
+            <state relative-caret-position="1196">
+              <caret line="97" column="7" selection-start-line="97" selection-start-column="7" selection-end-line="97" selection-end-column="7" />
               <folding>
                 <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
@@ -31,8 +36,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/P3JS高级进阶/Day1面向对象精讲/02构造函数.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+            <state relative-caret-position="390">
+              <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -42,9 +47,35 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/P3JS高级进阶/Day1面向对象精讲/04构造函数的终极优化.html">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="137">
+              <caret line="17" column="36" lean-forward="true" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/P3JS高级进阶/Day2/01面向对象-三大特性（封装继承多台）.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="676">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/P3JS高级进阶/Day2/02面向对象-计算器.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="475">
+              <caret line="78" column="15" selection-start-line="78" selection-start-column="15" selection-end-line="78" selection-end-column="15" />
+              <folding>
+                <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -93,13 +124,11 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Sparelax" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/P5-小型框架/Day1/ScrollReveal/01ScrollReveal初体验.html" />
-        <option value="$PROJECT_DIR$/P5-小型框架/Day1/Less/less/index.less" />
         <option value="$PROJECT_DIR$/P5-小型框架/Day1/Less/01less初体验.html" />
         <option value="$PROJECT_DIR$/P5-小型框架/Day1/Less/02-local/02本地化使用less.html" />
         <option value="$PROJECT_DIR$/P5-小型框架/Day1/Less/02-local/less/test.less" />
@@ -149,6 +178,8 @@
         <option value="$PROJECT_DIR$/P6-Vue/Vue组件/13vue的匿名插槽.html" />
         <option value="$PROJECT_DIR$/P5-小型框架/Day3/01ES6语法/03解构赋值.html" />
         <option value="$PROJECT_DIR$/P3JS高级进阶/Day1面向对象精讲/01构造函数面向对象.html" />
+        <option value="$PROJECT_DIR$/P3JS高级进阶/Day2/01面向对象-三大特性（封装继承多台）.html" />
+        <option value="$PROJECT_DIR$/P3JS高级进阶/Day2/02面向对象-计算器.html" />
       </list>
     </option>
   </component>
@@ -158,19 +189,49 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="777" />
-    <option name="y" value="6" />
-    <option name="width" value="1124" />
-    <option name="height" value="1047" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="175" />
+    <option name="y" value="23" />
+    <option name="width" value="1182" />
+    <option name="height" value="877" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <showMembers ProjectPane="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="WebStudy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebStudy" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebStudy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebStudy" type="462c0819:PsiDirectoryNode" />
+              <item name="P3JS高级进阶" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebStudy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebStudy" type="462c0819:PsiDirectoryNode" />
+              <item name="P3JS高级进阶" type="462c0819:PsiDirectoryNode" />
+              <item name="Day2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebStudy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="WebStudy" type="462c0819:PsiDirectoryNode" />
+              <item name="P3JS高级进阶" type="462c0819:PsiDirectoryNode" />
+              <item name="Day3" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -182,38 +243,17 @@
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="WebProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebProject" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebProject" type="462c0819:PsiDirectoryNode" />
-              <item name="P3JS高级进阶" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="WebProject" type="462c0819:PsiDirectoryNode" />
-              <item name="P3JS高级进阶" type="462c0819:PsiDirectoryNode" />
-              <item name="Day1面向对象精讲" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.16.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/P6-Vue/Vue组件" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
-    <property name="nodejs_interpreter_path" value="D:/node" />
+    <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="D:/node_modules/npm" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
@@ -352,17 +392,18 @@
       <workItem from="1564372382227" duration="9199000" />
       <workItem from="1564449390898" duration="12944000" />
       <workItem from="1564536224278" duration="6363000" />
+      <workItem from="1564581688961" duration="1281000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="604381000" />
+    <option name="totallyTimeSpent" value="605662000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="777" y="6" width="1124" height="1047" extended-state="1" />
+    <frame x="175" y="23" width="1182" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28913444" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27390182" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -374,7 +415,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.5889371" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.329718" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32899868" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32924107" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -450,16 +491,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/P5-小型框架/Day2/01swiper/js/swiper.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/P5-小型框架/Day2/01swiper/js/swiper.esm.bundle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3088">
-          <caret line="2787" column="24" lean-forward="true" selection-start-line="2787" selection-start-column="24" selection-end-line="2787" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/P5-小型框架/Day2/01swiper/css/swiper.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
@@ -757,8 +788,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/P3JS高级进阶/Day1面向对象精讲/01构造函数面向对象.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="743">
-          <caret line="97" column="7" lean-forward="true" selection-start-line="97" selection-start-column="7" selection-end-line="97" selection-end-column="7" />
+        <state relative-caret-position="1196">
+          <caret line="97" column="7" selection-start-line="97" selection-start-column="7" selection-end-line="97" selection-end-column="7" />
           <folding>
             <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
@@ -770,8 +801,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/P3JS高级进阶/Day1面向对象精讲/02构造函数.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="15" column="41" lean-forward="true" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
+        <state relative-caret-position="390">
+          <caret line="15" column="41" selection-start-line="15" selection-start-column="41" selection-end-line="15" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -779,7 +810,29 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/P3JS高级进阶/Day1面向对象精讲/04构造函数的终极优化.html">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="17" column="36" lean-forward="true" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P3JS高级进阶/Day2/01面向对象-三大特性（封装继承多台）.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="676">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/P3JS高级进阶/Day2/02面向对象-计算器.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="78" column="15" selection-start-line="78" selection-start-column="15" selection-end-line="78" selection-end-column="15" />
+          <folding>
+            <element signature="n#script#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#script#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
