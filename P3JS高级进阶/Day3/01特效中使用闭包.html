@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button>按钮1</button>
+<button>按钮2</button>
+<button>按钮3</button>
+<script>
+    var btns = document.getElementsByTagName('button');
+    for (var i = 0;i<btns.length;i++){//这样是不能达到逐个按钮的点击的
+        //()()使用了闭包的作用域,里面的函数成为了一个封闭的作用域
+        (function (j) {
+            var btn = btns[j];
+            btn.onclick = function () {
+                alert('点击了第'+(j+1)+'个');
+            }
+        })(i)//这里的i是外面全局的i传进来的,然后将这个i赋值给形参j
+    }
+</script>
+</body>
+</html>

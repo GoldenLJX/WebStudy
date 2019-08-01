@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //这个类型就不方便，所以需要封装成一个对象
+    // var name1= '张三';
+    // var name2= '张三';
+    // var age2 = 19;
+    // var age1 = 19;
+    var p1 = {
+        name:'张三',
+        age:19
+    };
+    //上面这种叫封装
+    //下面来看看继承
+    //继承就是继承了父类的所有资源
+    var p2 = {
+        name:'Golden',
+        age:25
+    };
+    var  son = p2;
+    console.log(son.name);
+
+
+    //多态，同一个方法在不同的对象是不同表现形式
+    var obj = {'name':'zhangsan'};
+    var arr = [1,2,3];
+    console.log(obj.toString());//[object Object]
+    console.log(arr.toString());//1,2,3
+
+</script>
+</body>
+</html>

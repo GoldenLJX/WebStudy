@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script id="面向过程的计算器功能">
+    function add(a,b) {
+        return a+b;
+    };
+    function sub(a,b) {
+        return a-b;
+    };
+    function mul(a,b) {
+        return a*b;
+    };
+    function div(a,b) {
+        return a/b;
+    };
+    //计算一个（4+2）*8/6
+    console.log(div(mul(add(4, 2), 8), 6));
+</script>
+<script id="面向对象">
+    var Caculator = {
+        //属性
+        result:0,
+        //行为
+        add:function (num) {
+            this.result += num;
+        },
+        sub:function (num) {
+            this.result -= num;
+        },
+        mul:function (num) {
+            this.result *= num;
+        },
+        div:function (num) {
+            this.result /= num;
+        },
+        log:function () {
+            console.log(this.result)
+        }
+    };
+    Caculator.add(4);
+    Caculator.add(8);
+    Caculator.mul(6);
+    Caculator.div(4);
+    Caculator.log();
+    //这个还实现不了链式调用，因为没有返回值
+</script>
+<script id="面向对象-链式调用">
+    var Caculator = {
+        //属性
+        result:0,
+        //行为
+        add:function (num) {
+            this.result += num;
+            return this;
+        },
+        sub:function (num) {
+            this.result -= num;
+            return this;
+        },
+        mul:function (num) {
+            this.result *= num;
+            return this;
+        },
+        div:function (num) {
+            this.result /= num;
+            return this;
+        },
+        log:function () {
+            console.log(this.result);
+            return this;
+        }
+    };
+    Caculator.add(4).add(4).mul(6).div(2).log();
+    //这个还实现链式调用
+</script>
+</body>
+</html>
