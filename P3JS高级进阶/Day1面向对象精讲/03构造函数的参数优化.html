@@ -6,6 +6,12 @@
 </head>
 <body>
 <script>
+    //这样传惨的好处就是安全性更高,而且传递对象可以传很多个参数
+    /**
+     * 构造函数
+     * @param {object}option
+     * @constructor
+     */
     function Dog(option) {
         this.name= option.name;
         this.age = option.age;
