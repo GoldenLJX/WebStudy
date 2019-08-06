@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<!--记录总共创建了多少个人对象-->
+<script type="text/html">
+    //方案一:在全局变量记录创建了多少人,缺点:外界谁都可以调用这个countPerson变量,不安全
+    var countPerson = 0;
+    function Person(name,age) {
+    this.name = name;
+    this.age = age;
+    countPerson++;
+    }
+    var p1 = new Person('张三',25);
+    var p2 = new Person('李四',25);
+    console.log(countPerson);
+
+</script>
+<script type="text/html">
+    //方案二:实例属性
+    function Person(name,age,countPerson) {
+    this.name = name;
+    this.age = age;
+    this.countPerson =  countPerson;
+    }
+    var p1 = new Person('张三',25,1);
+    var p2 = new Person('李四',25,1);
+    console.log(p1.countPerson);
+    console.log(p2.countPerson);
+
+</script>
+<script type="text/html">
+    //静态方法:
+    function Person(name,age,countPerson) {
+        this.name = name;
+        this.age = age;
+        if(!Person.personCount){
+            Person.personCount = 0;
+        }
+        Person.personCount++;
+    };
+    Person.count= function () {
+        console.log('总共创建了' + Person.personCount + '个人');
+    };
+    var p1 = new Person('张三',25,1);
+    var p2 = new Person('李四',25,1);
+    Person.count();
+</script>
+<!--02关于创建出来的对象类型获取-->
+<script type="text/html">
+    var obj = {'name':'zn'};
+    var arr = [1,2,3];
+    var date = new Date();
+    console.log(typeof obj);//判断一个对象是不是Object类型的
+    console.log(arr.constructor.name);//判断它的构造函数是不是Array
+    console.log(Object.prototype.toString.call(date));//判断它的祖先类是不是Object
+</script>
+<script>
+    //自定义构造函数的类型
+    function Person(name,age) {
+        this.name = name;
+        this.age = age;
+    }
+    function Dog(name,age) {
+        this.name = name;
+        this.age = age;
+    }
+    function Cat(name,age) {
+        this.name = name;
+        this.age = age;
+    }
+    //实例化对象
+    var p = new Person('zs',18);
+    var d = new Dog('旺财',1);
+    var c = new Cat('招财',1);
+
+    //object
+    console.log(typeof p);
+    console.log(typeof d);
+    console.log(typeof c);
+
+    //[object Object]
+    console.log(p.toString());
+    console.log(d.toString());
+    console.log(c.toString());
+    //[object Object]
+    console.log(Object.prototype.toString.call(p));
+    console.log(Object.prototype.toString.call(d));
+    console.log(Object.prototype.toString.call(c));
+    /**
+     * Person
+     * Dog
+     * Cat
+     * 所以建议用这种获取构造函数的类型
+     */
+    console.log(p.constructor.name);
+    console.log(d.constructor.name);
+    console.log(c.constructor.name);
+</script>
+</body>
+</html>

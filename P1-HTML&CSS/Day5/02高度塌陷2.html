@@ -2,11 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>高度塌陷2</title>
     <style>
         .box1{
             border: 1px solid #000;
-
         }
         .box2{
             width: 80px;
@@ -22,13 +21,17 @@
 </head>
 <body>
 <div class="box1">
-    <div class="box2"></div>
-<!--    方式
-	在塌陷的父元素的最后添加一个空白的div，然后对该div进行清除浮动
-	<div id="box1">
-	<div id="box2"></div>
-	<div style="clear:both"></div>
-</div>-->
+    <div class="box2">
+        <img src="images/home1.jpg" alt="">
+        <img src="images/home2.jpg" alt="">
+        <img src="images/home3.jpg" alt="">
+    </div>
+        <!--    方式
+            在塌陷的父元素的最后添加一个空白的div，然后对该div进行清除浮动,缺点就是多了一个标签
+            <div id="box1">
+            <div id="box2"></div>
+            <div style="clear:both"></div>
+        </div>-->
     <div style="clear:both"></div>
 </div>
 <div class="box3"></div>
