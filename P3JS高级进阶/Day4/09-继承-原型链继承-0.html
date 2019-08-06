@@ -33,12 +33,12 @@
     Student.prototype = Person.prototype;
 
     var stu = new Student();
-    console.log(stu);
+    console.log(stu);//继承了Person类的run()方法
     console.log(stu.num);
     stu.run();
-/*
-    console.log(stu.name);
-    console.log(stu.pets);*/
+
+    console.log(stu.name);//undefined
+    console.log(stu.pets);//undefined
 </script>
 </body>
 </html>

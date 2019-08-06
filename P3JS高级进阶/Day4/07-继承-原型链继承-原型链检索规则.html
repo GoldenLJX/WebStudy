@@ -9,18 +9,18 @@
 <script>
     function Person(name) {
         this.name = name;
-        /*this.toString = function () {
-            console.log('我是增加在对象上面的方法');
-        }*/
+        // this.toString = function () {
+        //     console.log('我是增加在对象上面的方法');
+        // }
     }
 
-    /*Person.prototype.toString = function () {
+    Person.prototype.toString = function () {
         console.log('我是增加在原型对象上面的方法');
-    };*/
+    };
 
     var p = new Person('张三');
     console.log(p);
-    p.toString();
+    p.toString();//优先使用自己对象的方法,自己没有才去找原型对象的
 </script>
 </body>
 </html>

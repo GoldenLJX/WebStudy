@@ -14,7 +14,7 @@
     // console.log(p.constructor.name);
 
     Person.prototype = {
-         constructor: Person, // 一定要设置, 指向Object
+         constructor: Person, // 一定要设置, 不然就指向Object了
          name: '撩课',
          age: 18
     };
@@ -22,6 +22,7 @@
     var p1 = new Person();
     console.log(p1);
     console.log(p1.constructor.name);
+    console.log(p1);
 </script>
 </body>
 </html>

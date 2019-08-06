@@ -17,10 +17,23 @@
     var p = new Person('撩课', 18);
     // console.log(name in p); // false
     console.log('name' in p); // true
-    console.log('address' in p); // true
+    console.log('address' in p); // true,因为对象身上没有,会到原型对象里查找
 </script>
 
 <!--hasOwnProperty-->
+<script type="text/html">
+    function Person(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    Person.prototype.address = '上海';
+
+    var p = new Person('张三', 20);
+    console.log(p.hasOwnProperty('name')); // true
+    console.log(p.hasOwnProperty('address')); // false,只到对象自身查找
+
+</script>
+<!--怎样判断一个属性仅仅是原型对象属性-->
 <script>
     function Person(name, age) {
         this.name = name;
@@ -30,8 +43,8 @@
 
     var p = new Person('张三', 20);
     console.log(p.hasOwnProperty('name')); // true
-    console.log(p.hasOwnProperty('address')); // false
-
+    console.log(p.hasOwnProperty('address')); // false,只到对象自身查找
+    console.log('address' in new Person);//true
 </script>
 </body>
 </html>
