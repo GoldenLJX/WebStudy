@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //用面向对象的方法实现一个计算器
+    function Calculator() {
+        // this.result = 0;
+        //1.在内部声明达到私有变量的效果
+        var result = 0;
+        //2.私有函数,比如判断是不是输入的数字
+        function checkNum(num) {
+            var isNum = typeof num === 'number';
+            if(!isNum){
+                alert('输入有误,请重新输入!');
+            }
+            return isNum;
+        }
+        this.add = function (num) {
+            if (checkNum(num)) {
+                result += num;
+            }
+            return this;
+        };
+        this.sub = function (num) {
+            if (checkNum(num)){
+                result -= num;
+            }
+            return this;
+        };
+        this.logResult = function () {
+            console.log(result);
+        }
+    }
+
+    var cal = new Calculator();
+    cal.add(20).sub('haha');
+
+    cal.logResult();//10
+    //这个的弊端就是外界可以肆无忌惮的修改result这个变量,没有达到私有变量的效果
+    cal.result = 100;
+    // cal.checkNum();//报错了,不能访问私有的函数,因为这个是对象里面独有的
+    cal.logResult();//100
+</script>
+</body>
+</html>
