@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<script type="text/html">
+    // 1. 构造函数
+    function Person(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    Person.prototype = {
+        constructor: Person,
+        print(){
+            console.log(`我叫: ${this.name}, 今年: ${this.age}岁!`);
+        }
+    };
+
+    let p1 = new Person('张三', 19);
+    p1.print();
+
+    // class
+</script>
+<script>
+    class Person{
+        constructor(name, age){
+            this.name = name;
+            this.age = age;
+        }
+        print(){
+            console.log(`我叫: ${this.name}, 今年: ${this.age}岁!`);
+        }
+    }
+
+    let p1 = new Person('张三', 19);
+    p1.print();
+</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<script id="属性简写" type="text/html">
+    // 如果对象中属性值和变量名一样，并且属性的值就是变量表示值，则简写。
+    let name = '小煤球';
+    let age = 1;
+    let dog = {
+        name,
+        age,
+        logDog(){
+            console.log(`我叫: ${name}, 今年${age}岁`);
+        }
+    };
+    dog.logDog();
+</script>
+<script id="super" type="text/html">
+    // 通过super可以调用prototype上的属性或方法。
+    let dog1 = {name: 'python'};
+    let dog2 = {
+         __proto__: dog1,
+         name: '哈哈哈哈',
+         getDog1Name(){
+             return super.name;
+         }
+    };
+    console.log(dog2.getDog1Name());
+</script>
+<script id="对象拷贝-深拷贝和浅拷贝" type="text/html">
+    // Object.assign
+    let obj1 = {
+        person1: {
+            name: '张三'
+        }
+    };
+
+    let obj2 = {name: '李四'};
+    let obj = {};
+    Object.assign(obj, obj1, obj2);
+    console.log(obj);
+
+    console.log({...obj1, ...obj2});
+</script>
+<script>
+    let obj1 = { dog1: { name: '小煤球' } };
+    let obj2 = { name: '小Python' };
+    let obj = JSON.parse(JSON.stringify({ ...obj1, ...obj2 }));
+    obj.dog1.name = '哈哈哈哈';
+    console.log(obj1, obj);
+</script>
+</body>
+</html>
