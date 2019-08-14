@@ -3,7 +3,7 @@
     <img src="./assets/logo.png">
 <!--    <ClassAndStyle/>-->
 <!--    <IfAndShow/>-->
-    <ListRender/>
+    <OrtherInstruct/>
   </div>
 </template>
 
@@ -12,13 +12,18 @@
 // import ClassAndStyle from'./components/ClassAndStyle.vue'
 // import IfAndShow from'./components/IfAndShow.vue'
   import ListRender from'./components/ListRender.vue'
+  import ListFilter from'./components/ListFilter.vue'
+  import OrtherInstruct from'./components/OrtherInstruct.vue'
+
 export default {
 
   name: 'App',
   components: {
     // ClassAndStyle
     // IfAndShow
-    ListRender
+    // ListRender
+    // ListFilter
+    OrtherInstruct
   }
 }
 </script>
