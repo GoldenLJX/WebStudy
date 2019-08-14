@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Person(name,age) {
+        this.name = name;
+        this.age = age;
+    }
+    //给原型对象添加方法
+    Person.prototype.run= function () {
+        console.log('Hello world');
+    };
+    //访问方式一，通过构造函数来访问
+    console.log(Person.prototype.run);
+    //访问方式二，通过实例来访问
+    var p = new Person();
+    console.log(p._proto__);
+    var obj = {
+        add:function () {
+            console.log('Add');
+        }
+    };
+    Person.prototype = obj;
+    //这个说明其实原型对象是可以修改的
+    console.log(Person.prototype);
+    //其实之前的,也说明了是可以修改的
+    Person.prototype =  {
+        add:function () {
+            console.log('Test');
+        }
+    }
+</script>
+</body>
+</html>
