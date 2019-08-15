@@ -24,7 +24,7 @@
     function deepCopyObj2NewObj(fromObj, toObj) {
           //  在函数中先检查第一个参数是否有值，
          //  如果没有值那么就初始化一个空的对象
-         for(var key in fromObj){
+         for(var key in fromObj){//简单的对象遍历
              var fromValue = fromObj[key];
              if(!isObj(fromValue)){
                  toObj[key] = fromValue;

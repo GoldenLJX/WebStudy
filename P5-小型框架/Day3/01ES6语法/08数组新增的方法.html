@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //1)Array.from(),将一个数组或者类数组变成新数组,是浅拷贝操作
+    let oldArr = ['小煤球',10,{name:'Python',age:28}];
+    let newArr = Array.from(oldArr);
+    console.log(newArr);/*0: "小煤球"
+        1: 10
+        2: {name: "Python", age: 28}
+        length: 3
+        __proto__: Array(0)*/
+    console.log(newArr===oldArr);//false,说明新复制的数组和旧的数组不是同一个东西,地址不一样
+
+    //2)Array.fill填充
+    let arr = [1,2,3,4,5];
+    console.log(arr.fill('帅', 2, 4));//(5) [1, 2, "帅", "帅", 5];
+</script>
+</body>
+</html>

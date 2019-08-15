@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    /**
+     * 书ID, 书名, 价格,新旧级别
+     * @param {string}bookID
+     * @param {string}bookName
+     * @param {number}bookPrice
+     * @param {number}bookOld
+     * @constructor
+     */
+    function Book(bookID,bookName,bookPrice,bookOld) {
+        this.bookID = bookID;
+        this.bookName = bookName;
+        this.bookPrice = bookPrice;
+        this.bookOld = bookOld;
+    }
+    //原型对象-->描述书本
+    Book.prototype.desc = function () {
+        return 'ID:'+this.bookID +',书名:'+this.bookName +',价格:'+this.bookPrice+',新旧程度:'+this.bookOld;
+    }
+
+    //名称, 存书的仓库
+    function Library(libName) {
+        //1.私有变量,建一个仓库
+        var store = [];
+        //2.命名
+        this.libName = libName;
+        //3.行为,(1)存书
+        this.save = function (bookObj) {
+            store.push(bookObj);//将书存到仓库中
+            console.log('成功存入书籍'+bookObj.desc());
+        };
+        //4.借书
+        this.borrowBook =  function (bookID) {
+            //1.首先要查询这本书在不在仓库中,遍历整个仓库
+            for (var i =0 ; i<store.length;i++){
+                //2.去除图书
+                var  bookObj = store[i];
+                //id对比
+                if(bookObj.bookID ===bookID){//找到这本书了
+                    break;
+                }
+            }
+            //4.判断
+            if(i === store.length){
+                console.log('找不到这本书!');
+                return;
+            }
+            //5.程序能进到这里说明,这本书是找到了,把这本书从图书馆移出去
+            var borrowBook = store.splice(i,1)[0];
+            // 6. 返回出借的图书
+            console.log('成功出借: \n' + borrowBook.desc());
+            return borrowBook;
+        };
+        //5.查询所有的书籍
+        this.queryAllBooks = function(){
+            var result = '图书馆内共有以下图书: \n';
+            for (var i =0 ; i<store.length;i++){
+                //2.去除图书
+                var  bookObj = store[i];
+                result += bookObj.desc() + '\n';
+            }
+            console.log(result);
+            return store;
+        };
+        //6.根据书本id查询书籍
+        this.queryBookWithID = function (bookID) {
+            // 1. 遍历所有的图书
+            for (var i = 0; i < store.length; i++) {
+                // 2. 取出图书
+                var bookObj = store[i];
+                // 3. ID对比
+                if (bookObj.bookID === bookID) { // 找到
+                    break; // 跳出循环
+                }
+            }
+            // 4. 判断
+            if (i === store.length) {
+                console.log('查不到ID为:' + bookID + '的书籍');
+                return;
+            }
+            // 5. 返回书籍
+            console.log('查到ID为:' + bookID + '的书籍: \n' + bookObj.desc());
+            return bookObj;
+        }
+    }
+</script>
+<script>
+    var book1 = new Book('TS001','IOS零基础',40,10);
+    var book2 = new Book('TS002','IOS进阶',60,10);
+    var book3 = new Book('TS003','Android零基础',40,10);
+    var book4 = new Book('TS004','Android进阶',50,10);
+    var library = new Library('深圳中心书城');
+    library.save(book1);
+    library.save(book2);
+    library.save(book3);
+    library.save(book4);
+    library.queryAllBooks();
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //startWith(),判断是不是以某个字符串开头,返回一个布尔值
+    let url = 'https://www.spasrelax.com';
+    console.log(url.startsWith('https:'));//true,一般使用的场景:判断是以什么协议开始的
+
+    //endsWith(),判断以什么为结尾的方法
+    console.log(url.endsWith('.com'));//true
+
+    //includes(),判断字符串中是不是包含某些字符
+    let str = 'Golden is handsome';
+    console.log(str.includes('den'));//true
+
+    //repeat(),用于拷贝字符串
+    let test ='帅哥';
+    console.log(test.repeat(10));//帅哥帅哥帅哥帅哥帅哥帅哥帅哥帅哥帅哥帅哥
+
+    //padStart,在头部补充字符串
+    let pad= '220'.padEnd(5,1);//第一个参数就是字符串的最长的位数,第二个参数就是要补充的字符
+    console.log(pad);//22011
+    //padEnd,在尾部补充字符串
+    let pad2 = '11-13'.padStart(10,'2019-mm-11');//第一个参数就是字符串的最长的位数,第二个参数就是要补充的字符,-mm-dd这个就是不确定的意思
+    console.log(pad2);//88110
+</script>
+</body>
+</html>

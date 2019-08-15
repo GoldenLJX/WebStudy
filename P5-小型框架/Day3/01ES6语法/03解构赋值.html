@@ -5,24 +5,25 @@
     <title>解构赋值</title>
 </head>
 <body>
+<!--解构赋值,顾名思义就是将原来的解构解开,然后进行新的赋值-->
 <script id="数组的解构" type="text/html">
     //它允许将一个对象或者数组'分解'成多个单独的值.
     let nameArr = ['golden','Anna'];
     //这种方式获取数组中的数据比较麻烦
     let name1 = nameArr[0];
     let name2 = nameArr[1];
-    console.log(name1, name2);
+    console.log('methods1-------'+name1, name2);
     //method2
     let [name3,name4] = nameArr;
-    console.log(name3, name4);
+    console.log('methods2-------'+name3, name4);
 </script >
 <script id="对象的解构" type="text/html">
     let nameArr = {name:'golden',gender:'Anna'};
-    //这种方式获取数组中的数据比较麻烦
+    //这种方式获取对对象中的数据比较麻烦
     let {name3,gender} = {name3:'golden',gender:'Anna'};//这种方式获取对象,必须键是想同的名字
     console.log(name3, gender);
 </script>
-<script id="解构重命名">
+<script id="解构重命名" >
     let age = 20;
     let {name, age:golden, gender} = {name: '张三', age:1, gender:'男'};
     console.log(name, golden, gender);

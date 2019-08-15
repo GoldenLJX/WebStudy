@@ -5,13 +5,13 @@
     <title>Title</title>
 </head>
 <body>
-<script id="数组的延展" type="text/html" >
+<script id="数组的延展" type="text/html">
     let arr1 = ['a','b','c'];
     let arr2 = ['1','2','3'];
     let arr = [...arr1,...arr2];
-    console.log(arr);
+    console.log('test1---'+arr);//test1---a,b,c,1,2,3
 </script>
-<script id="对象的延展" type="text/html">
+<script id="对象的延展" >
     let arr1 = {name:'Golden',age:18};
     let arr2 = {name1:'Anna',age1:26};
     let Arr = {...arr1,...arr2}
@@ -19,7 +19,7 @@
 </script>
 <script>
     function getMinValue() {
-        console.log(Math.max(...arguments));
+        console.log(Math.min(...arguments));
     }
     getMinValue(1, -88, 2, 10, 9);
 

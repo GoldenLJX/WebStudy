@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul id="box"></ul>
+<!--模板字符串:用反引号`包含,变量用${}括起来,在开发中使用是非常灵活的-->
+<script type="text/html">
+    let name = 'Golden',gender = 'male';
+    //传统的字符串拼接,数量少的时候还好,多了就显得很复杂
+    let result = 'My name is '+ name+'gender is '+ gender;
+    //模板字符串的操作
+    let another = `My name is ${name} gender is ${gender}`;
+    console.log(result);//My name is Golden gender is male
+    console.log(another);//My name is Golden gender is male
+</script>
+<script>
+    //往dom里面插元素会很灵活
+    let  arrData = ['Golden','Anna','Karlie'];
+    let lis = arrData.map(function (value) {
+        return `<li>${value}</li>`
+    });
+    console.log(lis);//["<li>Golden</li>", "<li>Anna</li>", "<li>Karlie</li>"]
+    document.getElementById('box').innerHTML = lis.join('');//所以这里需要将数组解开,join() 方法用于把数组中的所有元素放入一个字符串。
+</script>
+</body>
+</html>

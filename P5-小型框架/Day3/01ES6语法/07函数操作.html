@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script id="设置默认值" type="text/html">
+    function f(name,age) {
+        console.log(name,age);
+    }
+    f();//undefined undefined,这里没有给入实参,所以会出现这种情况,因此,我们要给一个默认值
+
+    function f2(name,age='2') {
+        console.log(name,age);
+    }
+    f2();//undefined "2",这里就给了一个age的默认值
+</script>
+<script id="延展参数的转化" type="text/html">
+    let name = function(arg1,...arg2) {//当我第一个参数是已知的时候,第二个参数是未知的可以使用
+        console.log(arg1,arg2);//延展的参数会以数组的形式
+    };
+    name('张湾','李璐','Golden');//张湾 Array(2)
+    let name2 = function(...arg1) {//当我第一个参数是已知的时候,第二个参数是未知的可以使用
+        console.log(arg1);//延展的参数会以数组的形式
+    };
+    name2('张湾','李璐','Golden');// ["张湾", "李璐", "Golden"]
+</script>
+<script id="箭头函数">
+    /*
+    * 箭头函数允许使用以下3种方式来简化语法
+    * 可以省略function这个单词
+    * 如果函数只有一个参数,则可以省略花括号
+    * 如果函数体是一个单独表达式,则可以省略花括号和返回语句
+    * */
+    //假如现在遍历一个数组
+    let arr = ['张三','Golden'];
+    //传统的写法,用forEach遍历
+    arr.forEach(function (value, index, array) {
+        console.log(value);
+    });
+    //下面的箭头函数的效果和上面的传统的写法是一样的
+    arr.forEach((value, index, array)=>{
+        console.log(value,index,array);
+    });
+
+    /*箭头函数和传统函数的区别
+    * 1.多个参数要用()包起来,函数体有多条语句要用{}包起来
+    * 2.箭头函数根本没有自己的this,所以内部的this就是外层代码的this.正是因为它没有this,从而避免了this指向的问题
+    * 3.箭头函数么有arguments对象
+    * */
+</script>
+<script>
+    let obj = {
+        logThis:function () {
+            setTimeout(function () {
+                console.log(this);//Window {postMessage: ƒ, blur: ƒ, focus: ƒ, close: ƒ, parent: Window, …}
+            },1000);
+
+            setTimeout(()=>{
+                console.log(this);//{logThis: ƒ},
+            },2000);
+        }
+    };
+    obj.logThis();//这里打印的是window因为定时器是属于window的对象
+</script>
+<script>
+    var str = 'Golden';
+    console.log(window.str);//Golden
+    //let声明的变量不会放在window上
+    let str2 = 'Anna';
+    console.log(window.str2);//undefined
+</script>
+<script>
+    //验证this的指向问题.下面这个方法想法是想将name翻转输出,但是它出现了this的指向错乱的问题
+    const  o ={
+        name:'Julie',
+        greetBackwards(){
+            function getReverseName() {
+                let nameBackwards='';
+                for (let i= this.name.length-1;i>=0;i--){
+                    nameBackwards += this.name[i];
+                }
+                return nameBackwards;
+            }
+            return `${getReverseName()} si eman ym ,olleh`;
+        }
+    };
+    console.log(o.greetBackwards());
+</script>
+</body>
+</html>

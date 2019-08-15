@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // 1. 要拷贝的对象
+    var obj = {
+        name: '撩课',
+        age: 18,
+        friends: ['小花', '小黑'],
+        goodF: {
+            name: '小撩',
+            age: 19,
+            adress: '上海',
+            pets: [{name: '土豆'}, {name: '马铃薯'}]},
+        bir: new Date()
+    };
+    /**
+     * 分析,这个obj的对象那个,有嵌套的的元素,包括数组和对象,所以这个是一个复杂的数据类型
+     * 如果要每一层都遍历出来就要使用到递归的思想一层一层的往里面剖析出来
+     */
+    function copyObj(oldObj,newObj){
+        for (var key in oldObj){
+            var temp = oldObj[key];
+            if (!isObj(temp)){
+                newObj[key] = temp;
+            }else{
+                var tempObj = new temp.constructor;//temp是一个实例,获取它的构造函数
+                copyObj(temp,tempObj);//递归调用,往里面接着遍历
+                newObj[key] = tempObj;
+            }
+        };
+    }
+    var testCopyObj = obj;
+    console.log('测试一下浅拷贝');
+    console.log(testCopyObj);
+    var newObj = {};
+    copyObj(obj,newObj);//深度拷贝,是不会受到旧的对象的修改而修改的
+    testCopyObj.age = 24;
+
+    console.log('深度拷贝之后的新对象');
+    console.log(newObj);
+    console.log('测试一下浅拷贝修改属性之后的结果');
+    console.log(obj);//原来的和新的都被修改了
+    console.log(testCopyObj);
+
+
+
+    function isObj(obj) {
+        return obj === typeof Object;
+    }
+
+    /**
+     * 判断是否是数组
+     * @param arr
+     * @returns {arg is Array<any>}
+     */
+    function isArray(arr) {
+        return Array.isArray(arr);
+    }
+</script>
+</body>
+</html>

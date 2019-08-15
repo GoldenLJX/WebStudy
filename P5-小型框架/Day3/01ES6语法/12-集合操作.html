@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>12集合操作</title>
+</head>
+<body>
+
+<script>
+    // 1. 创建一个set
+    let set = new Set(['张三', '李四', '王五', '张三', '李四']);
+    console.log(set);//Set(3) {"张三", "李四", "王五"},因为想同的内容只会被一次保留
+
+    // 1个属性 size
+    console.log(set.size);
+
+    // 四个方法 add(), delete(), has(), clear
+    set.add('刘德华').add('旋之华');
+    console.log(set);//Set(5) {"张三", "李四", "王五", "刘德华", "旋之华"}
+
+    console.log(set.delete('张三'));
+    console.log(set);
+
+    console.log(set.has('李四1'));//false
+
+    console.log(set.clear());
+    console.log(set);//Set(0) {}
+
+</script>
+</body>
+</html>
