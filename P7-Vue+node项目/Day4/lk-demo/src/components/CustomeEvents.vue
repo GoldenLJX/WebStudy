@@ -18,7 +18,6 @@
             btnClick(){
                 //这个emit还可以传递参数
                 this.$emit('btnClick',{name:'Golden',age:25},'HH');//告诉父组件,我已经触发了这个点击的事件
-
             }
         }
     }

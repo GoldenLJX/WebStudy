@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>React初体验</title>
+</head>
+<body>
+<div id="app"></div>
+<script src="./js/react-dom.development.js"></script>
+<script src="js/react.development.js"></script>
+<script src="js/babel.min.js"></script>
+<script type="text/babel">
+    //1.获取页面真是的容器元素
+    const containerDiv = document.getElementById('app');
+    //2.jsx语法创建虚拟dom对象
+    const vDom = <div>Hello,React</div>;
+    ReactDOM.render(vDom,containerDiv);
+</script>
+</body>
+</html>
