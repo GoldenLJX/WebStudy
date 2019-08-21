@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用传统模式添加DOM和JSX添加DOM的区别</title>
+</head>
+<body>
+<div id="app1"></div>
+<div id="app2"></div>
+<script src="../js/react.development.js"></script>
+<script src="../js/react-dom.development.js"></script>
+<script src="../js/babel.min.js"></script>
+<script id="使用方法一用传统的React创建标签">
+    //使用两种方式将一个span标签添加到div标签中，class='itlike',内容为‘撩课学院'
+    //1.声明变量
+    let myClass ='IT_like';
+    let myContent = '撩课学院';
+    //2.创建span标签，并且添加类名
+    const vDom = React.createElement('span',{className:myClass},myContent);
+    //3添加DOM到容器元素中
+    ReactDOM.render(vDom,document.getElementById('app1'));
+</script>
+<script id="用JSX创建Span标签,记得使用type" type="text/babel">
+    //JSX语法就和普通HTML的语法差不多，直观，下面用{}的形式接受变量
+    const vDom2 = <span className={myClass}>{myContent}</span>;
+    ReactDOM.render(vDom2,document.getElementById('app2'));
+</script>
+</body>
+</html>

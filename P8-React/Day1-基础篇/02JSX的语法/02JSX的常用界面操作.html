@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app"></div>
+    <script src="../js/react.development.js"></script>
+    <script src="../js/react-dom.development.js"></script>
+    <script src="../js/babel.min.js"></script>
+    <script type="text/html">
+        //a.多个标签嵌套,外面只能有一个入口，一般用div做入口
+        ReactDOM.render(
+            <div>
+                <h3>Hello,World!</h3>
+                <p>你好啊世界</p>
+            </div>
+            , document.getElementById('app'));
+    </script>
+<script type="text/html">
+    //b.js中的变量和表达式，用{}引用
+    const str = '撩课学院';
+    ReactDOM.render(
+        <div>
+            {str}
+        </div>
+        ,document.getElementById('app'));
+</script>
+<script type="text/html">
+    //c.内联样式通过对象引用
+    const str = {
+        backgroundColor:'red',
+        color:'yellow',
+        fontSize:40
+    };
+    ReactDOM.render(
+    <div>
+        <div style={str}>我是Golden</div>
+    </div>
+    ,document.getElementById('app'));
+</script>
+<script type="text/babel">
+    //d.遍历数组，可以使用ES6语法中的map函数来遍历数组，并且在每一个子节点中记得添加一个唯一的key来区分
+    //1.数据
+    const dataArr=[
+        {name:'Golden',age:25},
+        {name:'Anna',age:22},
+        {name:'Karlie',age:25},
+        {name:'Hanna',age:32},
+    ];
+    //2.创建虚拟DOM节点
+    const vDom = (
+        <div>
+            <ul>
+                {
+                    dataArr.map((data,index)=>
+                        <li key={index}>
+                            {data.name}---{data.age}
+                        </li>
+                    )
+                }
+            </ul>
+        </div>
+    );
+    //3.渲染到节点中
+    ReactDOM.render(
+        vDom
+        ,document.getElementById('app'));
+</script>
+</body>
+</html>

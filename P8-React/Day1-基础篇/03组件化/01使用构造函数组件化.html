@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用构造函数组件化</title>
+</head>
+<body>
+<div id="app"></div>
+    <script src="../js/react.development.js"></script>
+    <script src="../js/react-dom.development.js"></script>
+    <script src="../js/babel.min.js"></script>
+    <script type="text/html">
+        function Test() {
+            return (
+                <div>
+                    <h3>测试组件</h3>
+                    <span>我是God</span>
+                </div>
+            )
+        }
+
+        ReactDOM.render(
+            <Test/>
+            ,document.getElementById('app'));
+    </script>
+    <script id="单组件" type="text/html">
+        //组件传递参数，并且获取参数
+        //对于传递参数是一个复杂的类型还会有自动遍历出来的作用
+        function Test(props) {
+            return (
+                <div>
+                    <h3>测试组件</h3>
+                    <span>我是{props.name} 学科是：{props.course}</span>
+                </div>
+            )
+        }
+
+        ReactDOM.render(
+            <Test name={'Golden'} course={['Java','H5']}/>
+            ,document.getElementById('app'));
+    </script>
+    <script id="复合组件" type="text/babel">
+        //组件传递参数，并且获取参数
+        //对于传递参数是一个复杂的类型还会有自动遍历出来的作用
+        function Name(props){
+            return <p>我叫{props.name}</p>
+        }
+
+        function Course(props){
+            return <p>学科是{props.course}</p>
+        }
+
+        function Test(props){
+            return (
+                <div>
+                    <Name name={'Anna'}/>
+                    <Course course={['Java','H5']}/>
+                </div>
+
+            )
+        }
+
+        ReactDOM.render(
+            <Test/>
+            ,document.getElementById('app'));
+    </script>
+</body>
+</html>

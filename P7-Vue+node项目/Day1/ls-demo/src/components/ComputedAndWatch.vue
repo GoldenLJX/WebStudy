@@ -5,13 +5,13 @@
         <p></p>
         <label>名:<input type="text" placeholder="请输入名字" v-model="lastName"></label>
         <hr>
-<!--        单向-->
+<!--单向-->
         <label>单向<input type="text" placeholder="请输入全名" v-model="fullName"></label>
         <p></p>
-        <!--        双向-->
+        <!--双向-->
         <label>双向<input type="text" placeholder="请输入全名" v-model="fullNameTwo"></label>
         <p></p>
-        <!--        双向-->
+        <!--双向-->
         <label>双向<input type="text" placeholder="请输入全名" v-model="fullNameThree"></label>
     </div>
 </template>

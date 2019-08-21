@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用class关键字来组件化</title>
+</head>
+<body>
+<div id="app"></div>
+    <script src="../js/react.development.js"></script>
+    <script src="../js/react-dom.development.js"></script>
+    <script src="../js/babel.min.js"></script>
+    <script type="text/babel">
+        //关键步骤:要先继承React.Component,证明你这个类是组件
+        //如果有参数要传递,要用this.props.xxx来实现,因为props是属于这个class的实例的方法
+        class Test extends React.Component{
+            render(){
+                return (
+                    <div>
+                        <h3>测试组件</h3>
+                        <span>我是{this.props.name} 学科是：{this.props.course}</span>
+                    </div>
+                )
+            }
+        }
+        ReactDOM.render(
+            <Test name={'Golden'} course={['Java','PHP']}/>
+            ,document.getElementById('app'));
+    </script>
+</body>
+</html>
